@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Story | Malbourne Coffee Co</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="story.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img
+            src="images/logo2.png"
+            alt="Malbourne Coffee Co"
+            class="logo-img"
+          />
+        </a>
+
+        <div class="nav-menu">
+          <a href="index.html#home" class="nav-link">Home</a>
+          <a href="story.html" class="nav-link active">Story</a>
+
+          <div class="dropdown">
+            <a href="#experience" class="nav-link dropdown-toggle">
+              Experience
+              <i class="fas fa-chevron-down dropdown-icon"></i>
+            </a>
+            <div class="dropdown-menu">
+              <a href="index.html#experience" class="dropdown-item"
+                >Experience</a
+              >
+              <a href="index.html#menu" class="dropdown-item">Menu</a>
+              <a href="training.html" class="dropdown-item">Training</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <a href="#beans" class="nav-link dropdown-toggle">
+              Shop
+              <i class="fas fa-chevron-down dropdown-icon"></i>
+            </a>
+            <div class="dropdown-menu">
+              <a href="index.html#beans" class="dropdown-item">Retail Beans</a>
+              <a href="#wholesale" class="dropdown-item">Import & Wholesale</a>
+            </div>
+          </div>
+
+          <a href="index.html#community" class="nav-link">Community</a>
+          <a href="index.html#loyalty" class="nav-link">Loyalty</a>
+          <a href="index.html#contact" class="nav-link">Contact</a>
+        </div>
+
+        <button class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    
+    <!-- Story Hero Section -->
+    <section class="story-hero" id="story-hero">
+      <!-- Hapus background image, background putih polos -->
+      <div class="container story-hero-container">
+        <div class="story-hero-content">
+          <!-- Foto Logo di atas -->
+          <div class="story-hero-logo">
+            <img
+              src="images/logo2.png"
+              alt="Malbourne Coffee Co Logo"
+              class="hero-logo-img"
+            />
+          </div>
+
+          <!-- Headline 1 baris di bawah foto -->
+          <h1 class="story-hero-title">
+            From a Coffee Shop to a Coffee Company
+          </h1>
+
+          <p class="story-hero-subtitle">
+            A journey crafted through quality, community, and purpose
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Origin Story Section - The Beginning -->
+    <section class="section origin-story" id="origin">
+      <div class="container">
+        <div class="origin-grid">
+          <!-- Left Column - Text (animate from left) -->
+          <div class="origin-content animate-left">
+            <span class="section-subtitle">The Beginning</span>
+            <h2 class="section-title origin-title">Origin Story</h2>
+            <p class="section-text origin-text">
+              Malbourne started as a coffee shop, a place where people came to
+              sit, pause, and connect.
+            </p>
+            <p class="section-text origin-text">
+              From the very beginning, coffee was never only about taste, but
+              about the experience and relationships formed around it.
+            </p>
+          </div>
+
+          <!-- Right Column - Image with hanging rope effect -->
+          <div class="origin-image animate-right">
+            <!-- Elemen tali gantungan -->
+            <div class="ceiling-hook"></div>
+            <div class="rope-knot"></div>
+            <div class="hanging-rope"></div>
+            <div class="rope-knot-bottom"></div>
+            <div class="connecting-ring"></div>
+
+            <!-- Foto -->
+            <div class="origin-image-placeholder"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Evolution Section - Transition to Coffee Company -->
+    <section class="section evolution" id="evolution">
+      <!-- Divider tipis di atas -->
+      <div class="section-divider"></div>
+
+      <div class="container evolution-container">
+        <div class="evolution-content">
+          <span class="section-subtitle evolution-subtitle">The Evolution</span>
+
+          <p class="evolution-main-text">
+            Over time, Malbourne evolved. Not only serving coffee, but building
+            standards in quality, bean sourcing, and philosophy throughout every
+            process.
+          </p>
+
+          <p class="evolution-emphasis">
+            This evolution marked Malbourne's transition into a coffee company
+          </p>
+
+          <!-- Brand attitude bullets - horizontal layout -->
+          <div class="brand-attitude">
+            <div class="attitude-item">
+              <span class="attitude-bullet"></span>
+              <span class="attitude-text">Quality-driven process</span>
+            </div>
+            <div class="attitude-item">
+              <span class="attitude-bullet"></span>
+              <span class="attitude-text">Thoughtful sourcing</span>
+            </div>
+            <div class="attitude-item">
+              <span class="attitude-bullet"></span>
+              <span class="attitude-text">Consistent experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider tipis di bawah (opsional) -->
+      <div class="section-divider bottom-divider"></div>
+    </section>
+
+    <!-- Core Values Section - Quality x Community -->
+    <section class="section core-values" id="core-values">
+      <div class="container">
+        <div class="core-values-grid">
+          <!-- Left Column - Quality -->
+          <div class="value-card quality-card">
+            <h2 class="value-title">Quality</h2>
+            <p class="value-text">
+              Quality is the foundation. From bean selection and roasting to
+              final presentation, every detail is approached with intention and
+              care.
+            </p>
+          </div>
+
+          <!-- Right Column - Community -->
+          <div class="value-card community-card">
+            <h2 class="value-title">Community</h2>
+            <p class="value-text">
+              Coffee is a medium. Malbourne exists to create space for
+              conversation, connection, and human interaction.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="people-section">
+      <div class="people-container">
+        <!-- SECTION HEADER -->
+        <div class="people-header">
+          <h2>People Behind the Craft</h2>
+          <p>
+            Malbourne is built by people who believe in quality, process, and
+            connection.
+          </p>
+        </div>
+
+        <!-- PERSON 1 -->
+        <div class="people-row">
+          <div class="people-label">OWNER / FOUNDER</div>
+
+          <div class="people-image">
+            <img src="images/moment1.jpg" alt="People 1" />
+          </div>
+
+          <div class="people-text">
+            <h3>Azmi Badres</h3>
+            <p>
+              Azmi Badres is the founder of Malbourne Coffee Co. His journey
+              with coffee began from a simple curiosity that grew into a deeper
+              commitment to quality, process, and the people behind every cup.
+              What started as a coffee shop slowly evolved into something more
+              intentional. For Azmi, coffee is not only about taste, but about
+              experience — how a space feels, how conversations happen, and how
+              relationships are formed naturally around coffee. Through
+              Malbourne, Azmi focuses on building a coffee company that values
+              consistency, thoughtful sourcing, and long-term growth. Every
+              decision is approached with care, ensuring that Malbourne remains
+              grounded while continuing to evolve with purpose. Coffee, for him,
+              is a medium — to connect people, ideas, and moments
+            </p>
+            <a href="#" class="people-btn">View Story</a>
+          </div>
+        </div>
+
+        <!-- PERSON 2 -->
+        <div class="people-row">
+          <div class="people-label">Example Role</div>
+
+          <div class="people-image">
+            <img src="images/moment2.jpg" alt="People 2" />
+          </div>
+
+          <div class="people-text">
+            <h3>Azmi Badres</h3>
+            <p>
+              Azmi Badres is the founder of Malbourne Coffee Co. His journey
+              with coffee began from a simple curiosity that grew into a deeper
+              commitment to quality, process, and the people behind every cup.
+              What started as a coffee shop slowly evolved into something more
+              intentional. For Azmi, coffee is not only about taste, but about
+              experience — how a space feels, how conversations happen, and how
+              relationships are formed naturally around coffee. Through
+              Malbourne, Azmi focuses on building a coffee company that values
+              consistency, thoughtful sourcing, and long-term growth. Every
+              decision is approached with care, ensuring that Malbourne remains
+              grounded while continuing to evolve with purpose. Coffee, for him,
+              is a medium — to connect people, ideas, and moments
+            </p>
+            <a href="#" class="people-btn">View Story</a>
+          </div>
+        </div>
+
+        <!-- PERSON 2 -->
+        <div class="people-row">
+          <div class="people-label">Example Role</div>
+
+          <div class="people-image">
+            <img src="images/moment2.jpg" alt="People 2" />
+          </div>
+
+          <div class="people-text">
+            <h3>Azmi Badres</h3>
+            <p>
+              Azmi Badres is the founder of Malbourne Coffee Co. His journey
+              with coffee began from a simple curiosity that grew into a deeper
+              commitment to quality, process, and the people behind every cup.
+              What started as a coffee shop slowly evolved into something more
+              intentional. For Azmi, coffee is not only about taste, but about
+              experience — how a space feels, how conversations happen, and how
+              relationships are formed naturally around coffee. Through
+              Malbourne, Azmi focuses on building a coffee company that values
+              consistency, thoughtful sourcing, and long-term growth. Every
+              decision is approached with care, ensuring that Malbourne remains
+              grounded while continuing to evolve with purpose. Coffee, for him,
+              is a medium — to connect people, ideas, and moments
+            </p>
+            <a href="#" class="people-btn">View Story</a>
+          </div>
+        </div>
+
+        <!-- PERSON 2 -->
+        <div class="people-row">
+          <div class="people-label">Example Role</div>
+
+          <div class="people-image">
+            <img src="images/moment2.jpg" alt="People 2" />
+          </div>
+
+          <div class="people-text">
+            <h3>Azmi Badres</h3>
+            <p>
+              Azmi Badres is the founder of Malbourne Coffee Co. His journey
+              with coffee began from a simple curiosity that grew into a deeper
+              commitment to quality, process, and the people behind every cup.
+              What started as a coffee shop slowly evolved into something more
+              intentional. For Azmi, coffee is not only about taste, but about
+              experience — how a space feels, how conversations happen, and how
+              relationships are formed naturally around coffee. Through
+              Malbourne, Azmi focuses on building a coffee company that values
+              consistency, thoughtful sourcing, and long-term growth. Every
+              decision is approached with care, ensuring that Malbourne remains
+              grounded while continuing to evolve with purpose. Coffee, for him,
+              is a medium — to connect people, ideas, and moments
+            </p>
+            <a href="#" class="people-btn">View Story</a>
+          </div>
+        </div>
+
+        <!-- PERSON 2 -->
+        <div class="people-row">
+          <div class="people-label">Example Role</div>
+
+          <div class="people-image">
+            <img src="images/moment2.jpg" alt="People 2" />
+          </div>
+
+          <div class="people-text">
+            <h3>Azmi Badres</h3>
+            <p>
+              Azmi Badres is the founder of Malbourne Coffee Co. His journey
+              with coffee began from a simple curiosity that grew into a deeper
+              commitment to quality, process, and the people behind every cup.
+              What started as a coffee shop slowly evolved into something more
+              intentional. For Azmi, coffee is not only about taste, but about
+              experience — how a space feels, how conversations happen, and how
+              relationships are formed naturally around coffee. Through
+              Malbourne, Azmi focuses on building a coffee company that values
+              consistency, thoughtful sourcing, and long-term growth. Every
+              decision is approached with care, ensuring that Malbourne remains
+              grounded while continuing to evolve with purpose. Coffee, for him,
+              is a medium — to connect people, ideas, and moments
+            </p>
+            <a href="#" class="people-btn">View Story</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- More sections will be added here -->
+
+    <div class="whatsapp-float">
+      <div class="whatsapp-text">Butuh Bantuan?</div>
+      <a href="https://wa.me/15551234567" target="_blank" class="whatsapp-link">
+        <div class="whatsapp-icon">
+          <i class="fab fa-whatsapp"></i>
+        </div>
+      </a>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo-section">
+            <img
+              src="images/logo2.png"
+              alt="Malbourne Coffee Co Logo"
+              class="footer-logo"
+            />
+            <p class="footer-brand">Malbourne Coffee Co</p>
+            <p class="footer-tagline">Crafted to Connect</p>
+          </div>
+
+          <div class="footer-columns">
+            <div class="footer-column">
+              <h3 class="column-title">Explore</h3>
+              <ul class="footer-menu">
+                <li>
+                  <a href="index.html#home" class="footer-menu-link">Home</a>
+                </li>
+                <li><a href="story.html" class="footer-menu-link">Story</a></li>
+                <li>
+                  <a href="index.html#experience" class="footer-menu-link"
+                    >Experience</a
+                  >
+                </li>
+                <li>
+                  <a href="index.html#beans" class="footer-menu-link"
+                    >Retail Beans</a
+                  >
+                </li>
+                <li>
+                  <a href="index.html#community" class="footer-menu-link"
+                    >Moment</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3 class="column-title">Coffee & Collaboration</h3>
+              <ul class="footer-menu">
+                <li>
+                  <a href="index.html#beans" class="footer-menu-link"
+                    >Retail Beans</a
+                  >
+                </li>
+                <li>
+                  <a href="#wholesale" class="footer-menu-link"
+                    >Beans Import & Wholesale</a
+                  >
+                </li>
+                <li>
+                  <a href="index.html#loyalty" class="footer-menu-link"
+                    >Loyalty Program</a
+                  >
+                </li>
+                <li>
+                  <a href="index.html#community" class="footer-menu-link"
+                    >Community & Events</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3 class="column-title">Contact</h3>
+              <ul class="footer-contact">
+                <li class="contact-item">
+                  <i class="fas fa-map-marker-alt contact-icon"></i>
+                  <span>Jalan bantaran 2D Malang</span>
+                </li>
+                <li class="contact-item">
+                  <i class="fab fa-whatsapp contact-icon"></i>
+                  <a
+                    href="https://wa.me/15551234567"
+                    target="_blank"
+                    class="contact-link"
+                    >+62 812-3078-0638</a
+                  >
+                </li>
+                <li class="contact-item">
+                  <i class="fas fa-envelope contact-icon"></i>
+                  <a href="mailto:info@malbournecoffee.com" class="contact-link"
+                    >Email</a
+                  >
+                </li>
+                <li class="contact-item">
+                  <i class="fas fa-phone contact-icon"></i>
+                  <a href="tel:+62341567890" class="contact-link"
+                    >+62 812-3078-0638</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <p class="footer-copyright">
+              Copyright © 2026 Malbourne Coffee Co | Powered by Malbourne Coffee
+              Co
+            </p>
+
+            <div class="footer-social">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://wa.me/15551234567"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="story-script.js"></script>
+  </body>
+</html>

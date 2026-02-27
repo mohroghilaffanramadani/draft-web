@@ -1,0 +1,960 @@
+/* Moment Page Styles */
+
+:root {
+    --moment-accent: #7f8565;
+    --moment-text-light: #4b4b4b;
+}
+
+/* ===== MOMENTS HERO SECTION DENGAN MOUNTAIN DIVIDER ===== */
+.moments-hero {
+    height: 100vh;
+    min-height: 800px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: calc(-1 * var(--nav-height));
+    overflow: hidden;
+}
+
+.moments-hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/experience.jpg");
+    background-size: cover;
+    background-position: center 40%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    animation: kenBurns 20s ease infinite alternate;
+}
+
+@keyframes kenBurns {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+.moments-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 0.3) 100%
+    );
+    z-index: 2;
+}
+
+.moments-hero-container {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 120px;
+}
+
+.moments-hero-content {
+    color: #ffffff;
+    max-width: 750px;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.hero-badge {
+    display: inline-block;
+    font-family: "Inter", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.moments-hero-title {
+    font-family: "Crimson Pro", serif;
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+.text-accent {
+    color: #7f8565;
+    font-weight: 600;
+}
+
+.moments-hero-subheadline {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+    max-width: 650px;
+    text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.moments-hero-scroll {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.scroll-text {
+    font-family: "Inter", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.scroll-line {
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(90deg, #7f8565, transparent);
+    position: relative;
+    overflow: hidden;
+}
+
+.scroll-line::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    animation: scrollLine 2s infinite;
+}
+
+@keyframes scrollLine {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+/* Di moment.css - UPDATE bagian ini */
+
+.hero-mountain {
+    position: absolute;
+    bottom: -2px;  /* Biar nempel di bawah */
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    z-index: 15;
+    pointer-events: none;
+}
+
+.hero-mountain svg {
+    display: block;
+    width: 100%;
+    height: 150px;  /* Tinggi segitiga */
+}
+
+/* ===== SECTION STYLES ===== */
+.section {
+    padding: 5rem 0;
+}
+
+.section-header {
+    margin-bottom: 3rem;
+    max-width: 700px;
+}
+
+.section-header.centered {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.section-subtitle {
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #7f8565;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+.section-title {
+    font-family: "Crimson Pro", serif;
+    font-size: 2.8rem;
+    font-weight: 300;
+    color: #2a211c;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.section-description {
+    font-family: "Inter", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #5a524c;
+    max-width: 600px;
+}
+
+.section-header.centered .section-description {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== COMMUNITY MOMENTS SECTION ===== */
+/* Sudah ada di CSS sebelumnya */
+.section-header.centered {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.section-header.centered .section-description {
+    margin-left: auto;
+    margin-right: auto;
+}
+.community-moments {
+    background-color: #faf8f5;
+    position: relative;
+    z-index: 5;
+    padding-top: 8rem;
+}
+
+.moments-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.moment-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px -8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(127, 133, 101, 0.1);
+}
+
+.moment-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 35px -12px rgba(127, 133, 101, 0.25);
+}
+
+.moment-image-wrapper {
+    height: 280px;
+    overflow: hidden;
+}
+
+.moment-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
+.moment-card:hover .moment-image {
+    transform: scale(1.08);
+}
+
+.moment-image.img1 { background-image: url('images/moment1.jpg'); }
+.moment-image.img2 { background-image: url('images/moment2.jpg'); }
+.moment-image.img3 { background-image: url('images/moment3.jpg'); }
+.moment-image.img4 { background-image: url('images/moment4.jpg'); }
+.moment-image.img5 { background-image: url('images/moment5.jpg'); }
+.moment-image.img6 { background-image: url('images/moment6.jpg'); }
+
+.moment-content {
+    padding: 1.5rem;
+}
+
+.moment-card-title {
+    font-family: "Crimson Pro", serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #2a211c;
+    margin-bottom: 0.5rem;
+}
+
+.moment-card-text {
+    font-family: "Inter", sans-serif;
+    font-size: 0.95rem;
+    color: #5a524c;
+    line-height: 1.5;
+}
+
+/* ===== EVENTS SECTION ===== */
+.events {
+    background-color: #f5f2ed;
+    padding: 5rem 0;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.event-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px -8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(127, 133, 101, 0.1);
+}
+
+.event-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 35px -12px rgba(127, 133, 101, 0.2);
+}
+
+.event-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.event-image-placeholder {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
+.event-card:hover .event-image-placeholder {
+    transform: scale(1.08);
+}
+
+.event-image-placeholder.cupping {
+    background-image: url('images/experience.jpg');
+    background-color: #8a987d;
+}
+
+.event-image-placeholder.collaboration {
+    background-image: url('images/experience.jpg');
+    background-color: #7f8565;
+}
+
+.event-image-placeholder.gathering {
+    background-image: url('images/experience.jpg');
+    background-color: #5a524c;
+}
+
+.event-card-content {
+    padding: 1.5rem;
+}
+
+.event-tag {
+    display: inline-block;
+    font-family: "Inter", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #7f8565;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.8rem;
+}
+
+.event-card-title {
+    font-family: "Crimson Pro", serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #2a211c;
+    margin-bottom: 0.8rem;
+    line-height: 1.3;
+}
+
+.event-card-text {
+    font-family: "Inter", sans-serif;
+    font-size: 0.95rem;
+    color: #5a524c;
+    line-height: 1.6;
+}
+
+/* ===== CRAFTED CONNECTIONS SECTION ===== */
+.crafted-connections {
+    background-color: #faf8f5;
+    padding: 5rem 0;
+}
+
+.connections-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.connections-content {
+    max-width: 550px;
+}
+
+.connections-quote {
+    font-family: "Crimson Pro", serif;
+    font-size: 1.8rem;
+    font-style: italic;
+    color: #7f8565;
+    margin: 2rem 0;
+    line-height: 1.4;
+    border-left: 3px solid #7f8565;
+    padding-left: 2rem;
+}
+
+.connections-text {
+    font-family: "Inter", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #5a524c;
+    margin-bottom: 2rem;
+}
+
+.connections-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.8rem 1rem;
+    background-color: #f5f2ed;
+    border-radius: 40px;
+    border: 1px solid rgba(127, 133, 101, 0.15);
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    background-color: #ffffff;
+    border-color: rgba(127, 133, 101, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px -8px rgba(127, 133, 101, 0.2);
+}
+
+.feature-bullet {
+    width: 8px;
+    height: 8px;
+    background-color: #7f8565;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+.feature-text {
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #2a211c;
+}
+
+.connections-image-col {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.connections-image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 25px 40px -15px rgba(0, 0, 0, 0.2);
+}
+
+.connections-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    display: block;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 16px;
+    transition: transform 0.5s ease;
+}
+
+.connections-image-wrapper:hover .connections-image {
+    transform: scale(1.05);
+}
+
+/* ===== CTA SECTION ===== */
+.cta-section {
+    padding: 5rem 0;
+    background-color: #7f8565;
+    color: white;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-family: "Crimson Pro", serif;
+    font-size: 2.8rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.cta-text {
+    font-family: "Inter", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: white;
+    color: #7f8565;
+    border-radius: 50px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+    margin-bottom: 1rem;
+}
+
+.cta-button:hover {
+    background-color: transparent;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px -10px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button i {
+    margin-right: 8px;
+}
+
+.cta-note {
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    font-style: italic;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== KHUSUS MEDIA QUERIES UNTUK MOBILE ===== */
+@media screen and (max-width: 768px) {
+    /* HERO SECTION */
+    .moments-hero {
+        min-height: 600px;
+        height: 90vh;
+        margin-top: calc(-1 * var(--nav-height));
+    }
+
+    .moments-hero-background {
+        background-position: center 30%;
+    }
+
+    .moments-hero-container {
+        padding-top: 100px;
+        align-items: center;
+    }
+
+    .moments-hero-content {
+        text-align: center;
+        padding: 0 20px;
+        max-width: 100%;
+    }
+
+    .hero-badge {
+        font-size: 0.6rem;
+        letter-spacing: 2px;
+        margin-bottom: 1rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .moments-hero-title {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+
+    .moments-hero-subheadline {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .moments-hero-scroll {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .scroll-text {
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+    }
+
+    .scroll-line {
+        width: 60px;
+    }
+
+    .hero-mountain svg {
+        height: 80px;
+    }
+
+    /* COMMUNITY MOMENTS SECTION */
+    .community-moments {
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+    }
+
+    .section-header {
+        padding: 0 20px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .moments-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 20px; /* Tambah padding jadi 20px */
+        width: 100%;
+    }
+
+    .moment-card {
+        width: 100%;
+        margin: 0;
+    }
+
+    .moment-image-wrapper {
+        height: 240px; /* Naikin dikit biar lebih proporsional */
+        width: 100%;
+    }
+
+    .moment-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .moment-content {
+        padding: 1.5rem; /* Naikin padding */
+    }
+
+    .moment-card-title {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .moment-card-text {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    /* EVENTS SECTION */
+    .events {
+        padding: 3rem 0;
+    }
+
+    .events-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 20px; /* Sama 20px */
+        width: 100%;
+    }
+
+    .event-card {
+        width: 100%;
+    }
+
+    .event-image {
+        height: 200px;
+        width: 100%;
+    }
+
+    .event-image-placeholder {
+        width: 100%;
+        height: 100%;
+    }
+
+    .event-card-content {
+        padding: 1.5rem;
+    }
+
+    .event-tag {
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .event-card-title {
+        font-size: 1.3rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .event-card-text {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    /* CRAFTED CONNECTIONS SECTION */
+    .crafted-connections {
+        padding: 3rem 0;
+    }
+
+    .connections-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0 20px; /* Konsisten 20px */
+        width: 100%;
+    }
+
+    .connections-content {
+        max-width: 100%;
+        order: 2;
+        padding: 0;
+    }
+
+    .connections-quote {
+        font-size: 1.5rem;
+        margin: 1.5rem 0;
+        padding-left: 1.5rem;
+    }
+
+    .connections-text {
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 1.5rem;
+    }
+
+    .connections-features {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .feature-item {
+        padding: 0.9rem 1.2rem;
+        justify-content: flex-start; /* Kiri biar ga ketengah */
+        width: 100%;
+    }
+
+    .feature-bullet {
+        width: 10px;
+        height: 10px;
+    }
+
+    .feature-text {
+        font-size: 0.95rem;
+    }
+
+    .connections-image-col {
+        order: 1;
+        width: 100%;
+    }
+
+    .connections-image-wrapper {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .connections-image {
+        max-height: 400px;
+        aspect-ratio: 16/10;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* CTA SECTION */
+    .cta-section {
+        padding: 3rem 0;
+    }
+
+    .cta-content {
+        padding: 0 20px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .cta-title {
+        font-size: 2rem;
+        padding: 0;
+    }
+
+    .cta-text {
+        font-size: 1rem;
+        padding: 0;
+        margin-bottom: 2rem;
+        max-width: 100%;
+    }
+
+    .cta-button {
+        padding: 1rem 2.5rem;
+        font-size: 1rem;
+        width: auto;
+        display: inline-block;
+    }
+
+    .cta-note {
+        font-size: 0.9rem;
+        padding: 0;
+    }
+}
+
+/* ===== UNTUK HP KECIL (320px - 375px) ===== */
+@media screen and (max-width: 375px) {
+    .moments-hero {
+        min-height: 550px;
+    }
+
+    .moments-hero-container {
+        padding-top: 80px;
+    }
+
+    .hero-badge {
+        font-size: 0.55rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .moments-hero-title {
+        font-size: 1.8rem;
+    }
+
+    .moments-hero-subheadline {
+        font-size: 0.85rem;
+    }
+
+    .hero-mountain svg {
+        height: 60px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section-description {
+        font-size: 0.95rem;
+    }
+
+    .moments-grid,
+    .events-grid,
+    .connections-grid {
+        padding: 0 15px; /* Turun dikit untuk HP kecil */
+    }
+
+    .moment-image-wrapper {
+        height: 200px;
+    }
+
+    .event-image {
+        height: 180px;
+    }
+
+    .moment-content,
+    .event-card-content {
+        padding: 1.2rem;
+    }
+
+    .moment-card-title,
+    .event-card-title {
+        font-size: 1.2rem;
+    }
+
+    .connections-image {
+        max-height: 300px;
+    }
+
+    .cta-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* ===== UNTUK LANDSCAPE MODE ===== */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    .moments-hero {
+        min-height: 400px;
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .moments-hero-container {
+        padding-top: 70px;
+        padding-bottom: 40px;
+    }
+
+    .hero-mountain {
+        display: none;
+    }
+
+    .moments-grid,
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .connections-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .connections-image {
+        max-height: 250px;
+    }
+
+    .moment-image-wrapper {
+        height: 180px;
+    }
+
+    .event-image {
+        height: 150px;
+    }
+}
+
+/* ===== FIX UNTUK NOTCH/IPHONE ===== */
+@supports (padding: max(0px)) {
+    .moments-hero-container,
+    .community-moments .section-header,
+    .community-moments .moments-grid,
+    .events .events-grid,
+    .crafted-connections .connections-grid,
+    .cta-section .cta-content {
+        padding-left: max(20px, env(safe-area-inset-left));
+        padding-right: max(20px, env(safe-area-inset-right));
+    }
+}

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loyalty Program | Malbourne Coffee Co</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="loyalty.css" />
+</head>
+<body>
+    <!-- Navbar (sama persis dengan moment.html) -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img
+            src="images/logo2.png"
+            alt="Malbourne Coffee Co"
+            class="logo-img"
+          />
+        </a>
+
+        <div class="nav-menu">
+          <a href="index.html#home" class="nav-link">Home</a>
+          <a href="story.html" class="nav-link">Story</a>
+
+          <div class="dropdown">
+            <a href="#" class="nav-link dropdown-toggle">
+              Experience
+              <i class="fas fa-chevron-down dropdown-icon"></i>
+            </a>
+            <div class="dropdown-menu">
+              <a href="experience.html" class="dropdown-item">Experience</a>
+              <a href="menu.html" class="dropdown-item">Menu</a>
+              <a href="training.html" class="dropdown-item">Training</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <a href="#" class="nav-link dropdown-toggle">
+              Shop
+              <i class="fas fa-chevron-down dropdown-icon"></i>
+            </a>
+            <div class="dropdown-menu">
+              <a href="beans.html" class="dropdown-item">Retail Beans</a>
+              <a href="wholesale.html" class="dropdown-item"
+                >Import & Wholesale</a
+              >
+            </div>
+          </div>
+
+          <a href="moment.html" class="nav-link">Community</a>
+          <a href="loyalty.html" class="nav-link active">Loyalty</a>
+          <a href="index.html#contact" class="nav-link">Contact</a>
+        </div>
+
+        <button class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- 1️⃣ SECTION 1 — HERO / INTRO -->
+    <section class="loyalty-hero" id="loyalty-hero">
+      <div class="loyalty-hero-background"></div>
+      <div class="loyalty-hero-overlay"></div>
+
+      <div class="container loyalty-hero-container">
+        <div class="loyalty-hero-content">
+          <span class="hero-badge">Malbourne Loyalty Program</span>
+          <h1 class="loyalty-hero-title">
+            Crafted for <span class="text-accent">Those Who Keep Coming Back</span>
+          </h1>
+
+          <p class="loyalty-hero-subheadline">
+            For Malbourne, loyalty is not merely about transactions, but about relationships that grow over time. The Malbourne Loyalty Program is designed for those who make coffee part of their routine, their stories, and their everyday connections.
+          </p>
+
+          <div class="loyalty-hero-scroll">
+            <span class="scroll-text">Discover the Program</span>
+            <span class="scroll-line"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2️⃣ SECTION 2 — PHILOSOPHY OF LOYALTY -->
+    <section class="section loyalty-philosophy" id="loyalty-philosophy">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-subtitle">More Than Rewards</span>
+          <h2 class="section-title">More Than Rewards</h2>
+          <p class="section-description philosophy-intro">
+            We believe loyal customers are not only looking for benefits, but for consistency and appreciation. Through the Malbourne Loyalty Program, we aim to:
+          </p>
+        </div>
+
+        <div class="philosophy-list">
+          <div class="philosophy-item">
+            <span class="philosophy-bullet"></span>
+            <p>Appreciate customers who continue to return</p>
+          </div>
+          <div class="philosophy-item">
+            <span class="philosophy-bullet"></span>
+            <p>Build more personal connections</p>
+          </div>
+          <div class="philosophy-item">
+            <span class="philosophy-bullet"></span>
+            <p>Create experiences that evolve, not remain static</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3️⃣ SECTION 3 — BENEFIT OVERVIEW -->
+    <section class="section loyalty-benefits" id="loyalty-benefits">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-subtitle">What You Get</span>
+          <h2 class="section-title">What You Get</h2>
+          <p class="section-description">
+            As part of the Malbourne Loyalty Program, you will receive a range of benefits that continue to grow over time.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <!-- Benefit 1 -->
+          <div class="benefit-card">
+            <div class="benefit-content">
+              <p class="benefit-text">Access to exclusive promotions</p>
+            </div>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div class="benefit-card">
+            <div class="benefit-content">
+              <p class="benefit-text">Priority access to selected products or menu items</p>
+            </div>
+          </div>
+
+          <!-- Benefit 3 -->
+          <div class="benefit-card">
+            <div class="benefit-content">
+              <p class="benefit-text">Early information on events and activations</p>
+            </div>
+          </div>
+
+          <!-- Benefit 4 -->
+          <div class="benefit-card">
+            <div class="benefit-content">
+              <p class="benefit-text">Special offers for retail beans and merchandise</p>
+            </div>
+          </div>
+
+          <!-- Benefit 5 -->
+          <div class="benefit-card">
+            <div class="benefit-content">
+              <p class="benefit-text">Additional benefits developed in the future</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="benefits-note">Benefit details may evolve over time.</p>
+      </div>
+    </section>
+
+    <!-- 4️⃣ SECTION 4 — HOW IT WORKS -->
+    <section class="section loyalty-how-it-works" id="loyalty-how-it-works">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-subtitle">How It Works</span>
+          <h2 class="section-title">How It Works</h2>
+          <p class="section-description how-text">
+            The Malbourne Loyalty Program is designed to be simple and flexible. There is no complicated process involved. Simply join, engage, and enjoy the Malbourne experience. Specific program mechanics will be adjusted and developed in line with the growth phase of the program.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5️⃣ SECTION 5 — FUTURE-READY FOUNDATION -->
+    <section class="section loyalty-future" id="loyalty-future">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-subtitle">Built to Grow</span>
+          <h2 class="section-title">Built to Grow</h2>
+          <p class="section-description future-intro">
+            This Loyalty Program is prepared as a long-term foundation. In the future, it may evolve into:
+          </p>
+        </div>
+
+        <div class="future-list">
+          <div class="future-item">
+            <span class="future-bullet"></span>
+            <p>A membership system</p>
+          </div>
+          <div class="future-item">
+            <span class="future-bullet"></span>
+            <p>Points or tier-based programs</p>
+          </div>
+          <div class="future-item">
+            <span class="future-bullet"></span>
+            <p>Special collaborations</p>
+          </div>
+          <div class="future-item">
+            <span class="future-bullet"></span>
+            <p>Exclusive events for members</p>
+          </div>
+        </div>
+
+        <p class="future-note">
+          All developments will be introduced gradually, without compromising the overall experience.
+        </p>
+      </div>
+    </section>
+
+    <!-- 6️⃣ SECTION 6 — JOIN & CTA -->
+    <section class="section loyalty-join" id="loyalty-join">
+      <div class="container">
+        <div class="join-content">
+          <h2 class="join-title">Join the Circle</h2>
+          <p class="join-text">
+            Interested in becoming part of the Malbourne Loyalty Program? Contact us via WhatsApp for more information and early registration.
+          </p>
+          <a href="https://wa.me/6281230780638?text=Hi%2C%20I'm%20interested%20in%20joining%20the%20Malbourne%20Loyalty%20Program." class="join-button" target="_blank">
+            <i class="fab fa-whatsapp"></i> Join via WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7️⃣ SECTION 7 — FOOTNOTE -->
+    <section class="loyalty-footnote" id="loyalty-footnote">
+      <div class="container">
+        <p class="footnote-text">
+          The Malbourne Loyalty Program will continue to develop in line with the brand's vision and customer needs.
+        </p>
+      </div>
+    </section>
+
+    <!-- WhatsApp Float (sama persis dengan moment.html) -->
+    <div class="whatsapp-float">
+      <div class="whatsapp-text">Butuh Bantuan?</div>
+      <a
+        href="https://wa.me/6281230780638"
+        target="_blank"
+        class="whatsapp-link"
+      >
+        <div class="whatsapp-icon">
+          <i class="fab fa-whatsapp"></i>
+        </div>
+      </a>
+    </div>
+
+    <!-- Footer (sama persis dengan moment.html) -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo-section">
+            <img
+              src="images/logo2.png"
+              alt="Malbourne Coffee Co Logo"
+              class="footer-logo"
+            />
+            <p class="footer-brand">Malbourne Coffee Co</p>
+            <p class="footer-tagline">Crafted to Connect</p>
+          </div>
+
+          <div class="footer-columns">
+            <div class="footer-column">
+              <h3 class="column-title">Explore</h3>
+              <ul class="footer-menu">
+                <li><a href="index.html" class="footer-menu-link">Home</a></li>
+                <li><a href="story.html" class="footer-menu-link">Story</a></li>
+                <li>
+                  <a href="experience.html" class="footer-menu-link"
+                    >Experience</a
+                  >
+                </li>
+                <li>
+                  <a href="beans.html" class="footer-menu-link">Retail Beans</a>
+                </li>
+                <li>
+                  <a href="moment.html" class="footer-menu-link">Moment</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3 class="column-title">Coffee & Collaboration</h3>
+              <ul class="footer-menu">
+                <li>
+                  <a href="beans.html" class="footer-menu-link">Retail Beans</a>
+                </li>
+                <li>
+                  <a href="wholesale.html" class="footer-menu-link"
+                    >Beans Import & Wholesale</a
+                  >
+                </li>
+                <li>
+                  <a href="loyalty.html" class="footer-menu-link"
+                    >Loyalty Program</a
+                  >
+                </li>
+                <li>
+                  <a href="moment.html" class="footer-menu-link"
+                    >Community & Events</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3 class="column-title">Contact</h3>
+              <ul class="footer-contact">
+                <li class="contact-item">
+                  <i class="fas fa-map-marker-alt contact-icon"></i>
+                  <span>Jalan bantaran 2D Malang</span>
+                </li>
+                <li class="contact-item">
+                  <i class="fab fa-whatsapp contact-icon"></i>
+                  <a
+                    href="https://wa.me/6281230780638"
+                    target="_blank"
+                    class="contact-link"
+                    >+62 812-3078-0638</a
+                  >
+                </li>
+                <li class="contact-item">
+                  <i class="fas fa-envelope contact-icon"></i>
+                  <a href="mailto:info@malbournecoffee.com" class="contact-link"
+                    >Email</a
+                  >
+                </li>
+                <li class="contact-item">
+                  <i class="fas fa-phone contact-icon"></i>
+                  <a href="tel:+62341567890" class="contact-link"
+                    >+62 812-3078-0638</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <p class="footer-copyright">
+              Copyright © 2026 Malbourne Coffee Co | Powered by Malbourne Coffee
+              Co
+            </p>
+            <div class="footer-social">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://wa.me/6281230780638"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="loyalty.js"></script>
+</body>
+</html>

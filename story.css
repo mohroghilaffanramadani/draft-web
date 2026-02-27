@@ -1,0 +1,1428 @@
+/* Story Page Styles */
+/* Selaras dengan home page - mempertahankan konsistensi warna dan desain */
+
+:root {
+  /* Menggunakan variable yang sama dengan home page */
+  --story-accent: #7f8565;
+  --story-text-light: #4b4b4b;
+}
+
+/* Story Hero Section */
+.story-hero {
+  height: 100vh; /* Tidak full height, 80% viewport height */
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: calc(-1 * var(--nav-height));
+  overflow: visible !important;
+  min-height: 600px; /* Minimum height */
+  max-height: 800px; /* Maximum height */
+  background-color: #ffffff; /* Background putih polos */
+}
+
+/* Container untuk konten hero */
+.story-hero-container {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.story-hero-content {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Logo di atas */
+.story-hero-logo {
+  margin-bottom: 2.5rem;
+  opacity: 0;
+  transform: translateX(-100vw); /* Muncul dari luar layar kiri */
+  animation: storySlideInFromFarLeft 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation-delay: 0.2s;
+}
+
+.hero-logo-img {
+  max-width: 250px;
+  height: auto;
+  display: inline-block;
+}
+
+/* Headline - 1 baris */
+.story-hero-title {
+  font-family: "Crimson Pro", serif;
+  font-weight: 400;
+  font-size: 2.7rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: #515050;
+  letter-spacing: 0.3px;
+  opacity: 0;
+  transform: translateX(-100vw); /* Muncul dari luar layar kiri */
+  animation: storySlideInFromFarLeft 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation-delay: 0.4s;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Animasi slide dari luar layar paling kiri - SAMA PERSIS DENGAN HOME */
+@keyframes storySlideInFromFarLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100vw);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Hapus title-break karena sudah 1 baris */
+.title-break {
+  display: none;
+}
+
+/* Untuk memastikan animasi tetap berjalan di semua ukuran */
+.story-hero * {
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.story-hero-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem; /* Diperkecil dari 1.35rem */
+  font-weight: 500; /* Ditebalkan dari 300 */
+  color: #7f8565;
+  line-height: 1.5;
+  max-width: 700px;
+  margin: 0 auto;
+  letter-spacing: 0.3px; /* Sedikit ditambah untuk keterbacaan */
+  opacity: 0;
+  transform: translateX(-100vw); /* Muncul dari luar layar paling kiri */
+  animation: storySlideInFromFarLeft 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation-delay: 0.6s;
+}
+
+/* Animasi slide dari luar layar paling kiri - SAMA PERSIS DENGAN HOME */
+@keyframes storySlideInFromFarLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100vw);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Untuk memastikan animasi tetap berjalan di semua ukuran */
+.story-hero * {
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* Origin Story Section */
+.origin-story {
+  padding: 3rem 0;
+  background-color: var(--bg-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.origin-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem; /* Diperkecil dari 4rem */
+  align-items: center;
+  position: relative;
+  z-index: 5;
+}
+
+.origin-content {
+  max-width: 500px;
+  /* Tambahkan ini untuk menggeser ke kanan */
+  margin-left: auto;  /* Ini akan mendorong konten ke kanan */
+  margin-right: 0;    /* Pastikan margin kanan 0 */
+}
+
+/* Hidden states for animation */
+.origin-content.hidden-left {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+.origin-image.hidden-right {
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+/* Animation classes */
+.origin-content.animate-left {
+  animation: slideInFromLeft 0.8s ease-out forwards;
+}
+
+.origin-image.animate-right {
+  animation: slideInFromRight 0.8s ease-out forwards;
+}
+
+/* Keyframes - reuse dari home */
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.section-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #7f8565;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.origin-title {
+  font-family: "Crimson Pro", serif;
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: #515050;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.origin-text {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.origin-text:last-of-type {
+  margin-bottom: 0;
+}
+
+/* ===== IMAGE HANGING EFFECT - BERGERAK TERUS TANPA HENTI ===== */
+
+/* Image container dengan efek gantungan */
+.origin-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 40px; /* Ruang untuk tali */
+  
+  /* Animasi bergerak terus tanpa henti - TIDAK BUTUH HOVER */
+  animation: hangAndSway 14s infinite alternate ease-in-out;
+  transform-origin: top center;
+  will-change: transform;
+}
+
+/* Foto - tinggi dikurangi */
+.origin-image-placeholder {
+  width: 80%;
+  max-width: 380px;
+  height: 380px; /* Turun dari 450px */
+  background-image: url("images/moment4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  box-shadow: 0 20px 30px -10px rgba(0,0,0,0.25);
+  position: relative;
+  z-index: 5;
+}
+
+/* Tali - lebih realistik dengan tekstur */
+.hanging-rope {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 40px;
+  background: linear-gradient(to bottom, #a18b7a, #c8b9aa, #8f7e6e);
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 10;
+}
+
+/* Serat-serat tali */
+.hanging-rope::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 6px;
+  height: 100%;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 3px,
+    rgba(255,255,240,0.1) 3px,
+    rgba(255,255,240,0.1) 6px
+  );
+  border-radius: 2px;
+}
+
+/* Simpul tali di bagian atas */
+.rope-knot {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 18px;
+  background: #7d6c5c;
+  border-radius: 50% 50% 40% 40%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 11;
+}
+
+/* Simpul tali di bagian bawah (dekat foto) */
+.rope-knot-bottom {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 22px;
+  height: 14px;
+  background: #8e7d6d;
+  border-radius: 30% 30% 50% 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  z-index: 11;
+}
+
+/* Ring penghubung tali ke foto - posisi disesuaikan dengan tinggi foto baru */
+.connecting-ring {
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 26px;
+  border: 3px solid #c0b0a0;
+  border-radius: 50%;
+  background-color: rgba(210, 190, 170, 0.2);
+  z-index: 12;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+/* Lingkaran dalam ring */
+.connecting-ring::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border: 2px solid #a69585;
+  border-radius: 50%;
+  background-color: rgba(230, 220, 210, 0.3);
+}
+
+/* Kait di langit-langit */
+.ceiling-hook {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 22px;
+  border: 3px solid #7f8565;
+  border-bottom: none;
+  border-radius: 20px 20px 0 0;
+  z-index: 15;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+/* ANIMASI UTAMA - Bergerak bolak-balik seperti bandul */
+@keyframes hangAndSway {
+  0% {
+    transform: rotate(-2deg) translateX(-8px);
+  }
+  20% {
+    transform: rotate(-1.5deg) translateX(-6px);
+  }
+  40% {
+    transform: rotate(0deg) translateX(0px);
+  }
+  50% {
+    transform: rotate(0.5deg) translateX(3px);
+  }
+  60% {
+    transform: rotate(1.2deg) translateX(6px);
+  }
+  70% {
+    transform: rotate(1.8deg) translateX(9px);
+  }
+  80% {
+    transform: rotate(1.2deg) translateX(6px);
+  }
+  90% {
+    transform: rotate(0.3deg) translateX(2px);
+  }
+  100% {
+    transform: rotate(-2deg) translateX(-8px);
+  }
+}
+
+/* Bayangan halus di dinding */
+.origin-image::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 20px;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.15) 0%, transparent 70%);
+  filter: blur(5px);
+  z-index: 1;
+  animation: shadowFollow 14s infinite alternate ease-in-out;
+}
+
+/* Bayangan ikut bergerak */
+@keyframes shadowFollow {
+  0% {
+    transform: translateX(calc(-50% - 6px)) scaleX(1.2);
+    opacity: 0.4;
+  }
+  40% {
+    transform: translateX(-50%) scaleX(1);
+    opacity: 0.3;
+  }
+  70% {
+    transform: translateX(calc(-50% + 7px)) scaleX(1.2);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateX(calc(-50% - 6px)) scaleX(1.2);
+    opacity: 0.4;
+  }
+}
+
+/* HAPUS SEMUA ANIMASI HOVER DAN DRAG */
+.origin-image:hover .origin-image-placeholder {
+  animation: none; /* Tidak ada perubahan saat hover */
+}
+
+/* Pastikan tidak ada yang kursor interaktif */
+.origin-image,
+.origin-image * {
+  cursor: default;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Evolution Section - 1 Column, Lots of Whitespace */
+.evolution {
+  padding: 6rem 0;
+  background-color: var(--bg-primary);
+  position: relative;
+}
+
+/* Divider tipis */
+.section-divider {
+  width: 80px;
+  height: 2px;
+  background-color: #7f8565;
+  margin: 0 auto 3rem auto;
+  opacity: 0.4;
+}
+
+.bottom-divider {
+  margin: 3rem auto 0 auto;
+}
+
+.evolution-container {
+  max-width: 900px; /* Lebih sempit untuk whitespace */
+  margin: 0 auto;
+}
+
+.evolution-content {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.evolution-subtitle {
+  margin-bottom: 2.5rem;
+  color: #7f8565;
+}
+
+.evolution-main-text {
+  font-family: "Crimson Pro", serif;
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #515050;
+  margin-bottom: 2.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.evolution-emphasis {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #7f8565;
+  margin-bottom: 3rem;
+  font-style: italic;
+  letter-spacing: 0.3px;
+}
+/* Brand attitude - grid 3 kolom simetris tanpa bullet */
+.brand-attitude {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 3rem auto 0;
+  max-width: 800px;
+  width: 100%;
+}
+
+.attitude-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.2rem 0.8rem;
+  background-color: #f8f6f2; /* Warna sedikit berbeda dari background utama */
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(127, 133, 101, 0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+}
+
+/* Efek mengambang saat hover */
+.attitude-item:hover {
+  background-color: #ffffff;
+  border-color: rgba(127, 133, 101, 0.3);
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 30px -10px rgba(127, 133, 101, 0.25);
+  cursor: default;
+}
+
+.attitude-text {
+  font-family: "Inter", sans-serif;
+  font-size: 0.85rem; /* Diperkecil */
+  font-weight: 500;
+  color: #5f5f5f; /* Warna teks lebih gelap sedikit */
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  line-height: 1.5;
+}
+
+/* Teks berubah warna saat hover */
+.attitude-item:hover .attitude-text {
+  color: #7f8565;
+}
+
+/* Core Values Section - Quality x Community */
+.core-values {
+  padding: 5rem 0;
+  background-color: var(--bg-primary);
+  position: relative;
+}
+
+.core-values-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.value-card {
+  padding: 2.5rem 2rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(127, 133, 101, 0.15);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efek garis dekoratif di pojok */
+.value-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 60px;
+  background-color: #7f8565;
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px -15px rgba(127, 133, 101, 0.25);
+  border-color: rgba(127, 133, 101, 0.3);
+}
+
+.value-card:hover::before {
+  height: 100%;
+  opacity: 0.5;
+}
+
+.value-title {
+  font-family: "Crimson Pro", serif;
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: #515050;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.5px;
+  position: relative;
+  display: inline-block;
+}
+
+.value-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #7f8565;
+  opacity: 0.5;
+}
+
+.value-text {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 0;
+}
+
+/* Hover spesifik untuk masing-masing card */
+.quality-card:hover .value-title::after {
+  width: 60px;
+  transition: width 0.3s ease;
+}
+
+.community-card:hover .value-title::after {
+  width: 60px;
+  transition: width 0.3s ease;
+}
+
+:root {
+  --story-accent: #7f8565;
+}
+
+/* ===== PEOPLE SECTION ===== */
+.people-section {
+  padding: 1rem 0;
+  background: #fbfaf7;
+}
+
+.people-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ===== HEADER (CENTER) ===== */
+.people-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 6rem;
+}
+
+.people-header h2 {
+  font-family: "Crimson Pro", serif;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+  color: #333;
+}
+
+.people-header p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--story-accent); /* WARNA ACCENT */
+}
+
+/* ===== ROW ===== */
+.people-row {
+  display: grid;
+  grid-template-columns: 
+    28px                /* label — DIKECILIN */
+    360px               /* foto */
+    minmax(600px, 1fr); /* teks — DILEBARKAN */
+
+  column-gap: 2rem;     /* tetap kecil */
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.people-header p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--story-accent);
+  font-weight: 500; /* lebih tebel dikit */
+}
+
+/* ===== LABEL (LEBIH DEKET FOTO) ===== */
+.people-label {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg) translateX(4px); /* DIDEKETIN */
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  color: var(--story-accent);
+  text-align: center;
+}
+
+/* ===== IMAGE ===== */
+.people-image img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+
+  /* BENTUK JENDELA */
+  border-radius: 220px 220px 0 0;
+}
+
+/* ===== TEXT ===== */
+.people-text h3 {
+  font-family: "Crimson Pro", serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+  color: #333;
+   padding-left: 2.5rem;
+}
+
+.people-text p {
+  max-width: 940px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 1.8rem;
+   padding-left: 2.5rem;
+}
+
+.people-btn {
+  display: inline-block;
+  padding: 0.75rem 2.2rem;
+  background-color: var(--story-accent);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.people-text .people-btn {
+  margin-left: 2.5rem; /* INI YANG MINDahin KE KANAN */
+}
+
+/* Philosophy Section - Crafted to Connect */
+.philosophy {
+  padding: 6rem 0;
+  background-color: var(--bg-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.philosophy-container {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Left Column - Text */
+.philosophy-content {
+  max-width: 550px;
+  padding: 2rem 0;
+}
+
+.philosophy-headline {
+  font-family: "Crimson Pro", serif;
+  font-weight: 500;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  color: #515050;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.3px;
+}
+
+.philosophy-subline {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500; /* Ditebalkan dari 300 jadi 600 */
+  color: #7f8565;
+  margin-bottom: 0rem;
+  line-height: 1.5;
+}
+
+.philosophy-divider {
+  width: 60px;
+  height: 1px;
+  background-color: #7f8565;
+  opacity: 0.3;
+  margin: 1rem 0;
+}
+
+.philosophy-main-text {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+/* Micro Emphasis - di bawah deskripsi (seperti sebelumnya) */
+.philosophy-emphasis {
+  margin: 1rem 0 3rem;
+  padding-left: 1rem;
+  border-left: 3px solid rgba(127, 133, 101, 0.3);
+}
+
+.emphasis-line {
+  font-family: "Crimson Pro", serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  font-style: italic;
+  color: #515050;
+  line-height: 1.6;
+  margin-bottom: 0rem;
+}
+
+.emphasis-line:last-child {
+  margin-bottom: 0;
+}
+
+.philosophy-cta {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.philosophy-cta .btn {
+  padding: 0.9rem 2rem;
+  font-size: 0.95rem;
+}
+
+/* Right Column - Image */
+.philosophy-image-col {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.philosophy-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 25px 40px -15px rgba(0, 0, 0, 0.2);
+}
+
+.philosophy-image {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  display: block;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* Responsive untuk Mobile */
+@media only screen and (max-width: 768px) {
+  .story-hero {
+    height: 100vh;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .story-hero-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .story-hero-content {
+    padding: 0 0.5rem;
+    width: 100%;
+  }
+
+  /* Logo */
+  .story-hero-logo {
+    margin-bottom: 1.8rem;
+  }
+
+  .hero-logo-img {
+    max-width: 180px; /* Ukuran logo di mobile */
+    width: 100%;
+    height: auto;
+  }
+
+  /* Headline */
+  .story-hero-title {
+    font-size: 1.8rem; /* Diperkecil dari 2.7rem */
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    padding: 0 0.8rem;
+    max-width: 100%;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+  }
+
+  /* Subtitle */
+  .story-hero-subtitle {
+    font-size: 0.95rem; /* Diperkecil dari 1.2rem */
+    line-height: 1.5;
+    padding: 0 1rem;
+    max-width: 100%;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+  }
+
+  /* Animasi tetap sama tapi durasi sedikit lebih cepat untuk mobile */
+  .story-hero-logo {
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+  }
+
+  .story-hero-title {
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+  }
+
+  .story-hero-subtitle {
+    animation-duration: 1s;
+    animation-delay: 0.6s;
+  }
+}
+
+/* Responsive untuk Mobile - Origin Story */
+@media only screen and (max-width: 768px) {
+  .origin-story {
+    padding: 3rem 0;
+  }
+
+  .origin-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Content di atas */
+  .origin-content {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    order: 1;
+  }
+
+  /* The Beginning dan Origin Story di tengah */
+  .origin-content .section-subtitle {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .origin-content .origin-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Foto di tengah */
+  .origin-image {
+    order: 2;
+    margin: 1rem 0;
+    padding-top: 35px; /* Ruang untuk tali */
+  }
+
+  .origin-image-placeholder {
+    width: 85%;
+    max-width: 320px;
+    height: 340px;
+    margin: 0 auto;
+  }
+
+  /* Teks deskripsi di bawah foto */
+  .origin-content .origin-text {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+    padding: 0 1rem;
+    order: 3;
+  }
+
+  .origin-content .origin-text:last-of-type {
+    margin-bottom: 0;
+  }
+
+  /* Sesuaikan ukuran tali untuk mobile */
+  .hanging-rope {
+    height: 35px;
+  }
+
+  .rope-knot-bottom {
+    top: 30px;
+  }
+
+  .connecting-ring {
+    top: 40px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .ceiling-hook {
+    top: -12px;
+    width: 28px;
+    height: 18px;
+  }
+
+  .rope-knot {
+    width: 16px;
+    height: 16px;
+    top: -4px;
+  }
+
+  .rope-knot-bottom {
+    width: 20px;
+    height: 12px;
+  }
+
+  /* Reset animasi untuk mobile */
+  .origin-content.animate-left,
+  .origin-image.animate-right {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Responsive untuk Mobile - Evolution Section */
+@media only screen and (max-width: 768px) {
+  .evolution {
+    padding: 3rem 0;
+  }
+
+  .evolution-container {
+    max-width: 100%;
+    padding: 0 1.2rem;
+  }
+
+  .evolution-content {
+    padding: 1rem 0;
+  }
+
+  /* Subtitle */
+  .evolution-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1.5px;
+  }
+
+  /* Main text */
+  .evolution-main-text {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    padding: 0 0.5rem;
+  }
+
+  /* Emphasis text */
+  .evolution-emphasis {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+    line-height: 1.5;
+  }
+
+  /* Brand attitude - 1 kolom di mobile */
+  .brand-attitude {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 280px;
+    margin: 2rem auto 0;
+    padding: 0;
+  }
+
+  .attitude-item {
+    padding: 1rem 1.5rem;
+    background-color: #f8f6f2;
+    border-radius: 10px;
+    border: 1px solid rgba(127, 133, 101, 0.15);
+    width: 100%;
+  }
+
+  .attitude-text {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+  }
+
+  .attitude-item:hover {
+    transform: translateY(-3px) scale(1.01);
+  }
+
+  /* Divider */
+  .section-divider {
+    width: 60px;
+    margin-bottom: 2rem;
+  }
+
+  .bottom-divider {
+    margin-top: 2rem;
+  }
+}
+
+/* Responsive untuk Mobile - Core Values Section */
+@media only screen and (max-width: 768px) {
+  .core-values {
+    padding: 3rem 0;
+  }
+
+  .core-values-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .value-card {
+    padding: 2rem 1.5rem;
+    width: 100%;
+    border-radius: 14px;
+  }
+
+  .value-card::before {
+    width: 4px;
+    height: 40px; /* Garis dekoratif lebih pendek di mobile */
+  }
+
+  .value-card:hover {
+    transform: translateY(-5px); /* Efek hover lebih kecil di mobile */
+  }
+
+  .value-title {
+    font-size: 1.8rem; /* Turun dari 2.2rem */
+    margin-bottom: 1.2rem;
+  }
+
+  .value-title::after {
+    width: 35px; /* Garis bawah lebih pendek */
+    height: 2px;
+    bottom: -6px;
+  }
+
+  .value-text {
+    font-size: 1rem; /* Turun dari 1.1rem */
+    line-height: 1.6;
+  }
+
+  /* Hover effect untuk garis dekoratif */
+  .value-card:hover::before {
+    height: 70px; /* Memanjang saat hover */
+  }
+
+  .quality-card:hover .value-title::after,
+  .community-card:hover .value-title::after {
+    width: 50px; /* Melebar saat hover */
+  }
+}
+
+/* ===== PEOPLE SECTION - MOBILE VERSION ===== */
+@media only screen and (max-width: 768px) {
+  .people-section {
+    padding: 2rem 0;
+  }
+
+  .people-container {
+    padding: 0 1.2rem;
+  }
+
+  /* Header */
+  .people-header {
+    margin: 0 auto 3rem;
+    max-width: 100%;
+  }
+
+  .people-header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .people-header p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    padding: 0 0.5rem;
+  }
+
+  /* Row - Stack vertical */
+  .people-row {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 10px 25px -8px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(127, 133, 101, 0.1);
+  }
+
+  /* Label - Horizontal di atas foto */
+  .people-label {
+    writing-mode: horizontal-tb;
+    transform: none;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    color: var(--story-accent);
+    text-align: center;
+    margin-bottom: 0.5rem;
+    order: 1;
+  }
+
+  /* Image - di tengah */
+  .people-image {
+    order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .people-image img {
+    width: 100%;
+    max-width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 140px 140px 0 0; /* Bentuk jendela lebih kecil */
+  }
+
+  /* Text - di bawah foto, rata tengah */
+  .people-text {
+    order: 3;
+    text-align: center;
+    padding: 0 0.5rem;
+  }
+
+  .people-text h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .people-text p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    padding-left: 0;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  /* Button - di tengah */
+  .people-text .people-btn {
+    margin-left: 0;
+    padding: 0.6rem 1.8rem;
+    font-size: 0.65rem;
+    display: inline-block;
+  }
+}
+
+/* Responsive untuk Mobile - Philosophy Section */
+@media only screen and (max-width: 768px) {
+  .philosophy {
+    padding: 3rem 0;
+  }
+
+  .philosophy-container {
+    padding: 0 1.2rem;
+  }
+
+  .philosophy-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* Gap 0 karena foto di-hide */
+  }
+
+  /* Left Column - Text */
+  .philosophy-content {
+    max-width: 100%;
+    padding: 0;
+    order: 1;
+  }
+
+  .philosophy-headline {
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+  }
+
+  .philosophy-subline {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 0rem;
+    padding: 0 0.5rem;
+  }
+
+  .philosophy-divider {
+    width: 50px;
+    margin: 1.5rem auto;
+  }
+
+  .philosophy-main-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    padding: 0 0.5rem;
+  }
+
+  /* Micro Emphasis */
+  .philosophy-emphasis {
+    margin: 1rem 0 2rem;
+    padding-left: 0;
+    border-left: none;
+    text-align: center;
+  }
+
+  .emphasis-line {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: center;
+    font-style: italic;
+  }
+
+  /* CTA Buttons - Lebih kecil */
+  .philosophy-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+    align-items: center;
+  }
+
+  .philosophy-cta .btn {
+    width: auto; /* Auto width */
+    min-width: 200px; /* Lebar minimum */
+    max-width: 220px; /* Lebar maksimum diperkecil */
+    padding: 0.7rem 1.2rem; /* Padding lebih kecil */
+    font-size: 0.85rem; /* Font lebih kecil */
+    text-align: center;
+    margin: 0 auto; /* Tengah */
+  }
+
+  /* Hide Image Column di mobile */
+  .philosophy-image-col {
+    display: none; /* Foto di-hide */
+  }
+}
+
+/* Untuk layar sangat kecil (iPhone SE, 375px ke bawah) */
+@media only screen and (max-width: 375px) {
+  .philosophy-headline {
+    font-size: 1.9rem;
+  }
+
+  .philosophy-subline {
+    font-size: 0.9rem;
+  }
+
+  .philosophy-main-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .emphasis-line {
+    font-size: 1rem;
+  }
+
+  .philosophy-cta .btn {
+    min-width: 180px;
+    max-width: 200px;
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Untuk tablet (foto tetap muncul) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .philosophy-grid {
+    gap: 2rem;
+  }
+
+  .philosophy-headline {
+    font-size: 2.8rem;
+  }
+
+  .philosophy-content {
+    max-width: 450px;
+  }
+
+  .philosophy-subline {
+    font-size: 1.1rem;
+  }
+
+  .philosophy-main-text {
+    font-size: 1rem;
+  }
+
+  .philosophy-image-wrapper {
+    max-width: 380px;
+  }
+
+  .philosophy-cta {
+    gap: 1rem;
+  }
+
+  .philosophy-cta .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    min-width: 180px;
+  }
+}
+

@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moments & Community | Malbourne Coffee Co</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="moment.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img
+            src="images/logo2.png"
+            alt="Malbourne Coffee Co"
+            class="logo-img"
+          />
+        </a>
+
+        <div class="nav-menu">
+          <a href="index.html#home" class="nav-link">Home</a>
+          <a href="story.html" class="nav-link">Story</a>
+
+          <div class="dropdown">
+            <a href="#" class="nav-link dropdown-toggle">
+              Experience
+              <i class="fas fa-chevron-down dropdown-icon"></i>
+            </a>
+            <div class="dropdown-menu">
+              <a href="experience.html" class="dropdown-item">Experience</a>
+              <a href="menu.html" class="dropdown-item">Menu</a>
+              <a href="training.html" class="dropdown-item">Training</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <a href="#" class="nav-link dropdown-toggle">
+              Shop
+              <i class="fas fa-chevron-down dropdown-icon"></i>
+            </a>
+            <div class="dropdown-menu">
+              <a href="beans.html" class="dropdown-item">Retail Beans</a>
+              <a href="wholesale.html" class="dropdown-item"
+                >Import & Wholesale</a
+              >
+            </div>
+          </div>
+
+          <a href="moment.html" class="nav-link active">Community</a>
+          <a href="loyalty.html" class="nav-link">Loyalty</a>
+          <a href="index.html#contact" class="nav-link">Contact</a>
+        </div>
+
+        <button class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MOMENTS HERO SECTION DENGAN MOUNTAIN DIVIDER -->
+    <section class="moments-hero" id="moments-hero">
+      <div class="moments-hero-background"></div>
+      <div class="moments-hero-overlay"></div>
+
+      <div class="container moments-hero-container">
+        <div class="moments-hero-content">
+          <span class="hero-badge">Moments That Matter</span>
+          <h1 class="moments-hero-title">
+            Where Coffee <span class="text-accent">Connects</span> People
+          </h1>
+
+          <p class="moments-hero-subheadline">
+            Coffee is not only crafted to be tasted, but to connect people.
+            Malbourne believes coffee is a medium for meeting, sharing stories,
+            and building relationships.
+          </p>
+
+          <div class="moments-hero-scroll">
+            <span class="scroll-text">Discover the Moments</span>
+            <span class="scroll-line"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOUNTAIN DIVIDER - BENTUK SEGITIGA (TERINSPIRASI DARI DEEPSEEK) -->
+      <!-- MOUNTAIN DIVIDER - SEGITIGA 1 LAYER, KIRI LEBIH TINGGI -->
+      <div class="hero-mountain">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          preserveAspectRatio="none"
+        >
+          <!-- SEGITIGA: Kiri tinggi (280px), kanan rendah (120px) -->
+          <path
+            fill="#faf8f5"
+            fill-opacity="1"
+            d="M0,280 L720,120 L1440,280 L1440,320 L0,320 Z"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- COMMUNITY MOMENTS SECTION -->
+    <section class="section community-moments" id="community-moments">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-subtitle">01 — Visual Stories</span>
+          <h2 class="section-title">Community Moments</h2>
+          <p class="section-description">
+            A visual showcase of togetherness at Malbourne — candid, human,
+            warm, and unstaged moments born from real interactions.
+          </p>
+        </div>
+
+        <div class="moments-grid">
+          <!-- Moment 1 -->
+          <div class="moment-card">
+            <div class="moment-image-wrapper">
+              <div class="moment-image img1"></div>
+            </div>
+            <div class="moment-content">
+              <h3 class="moment-card-title">Morning Conversations</h3>
+              <p class="moment-card-text">
+                Quiet moments shared over first cups
+              </p>
+            </div>
+          </div>
+
+          <!-- Moment 2 -->
+          <div class="moment-card">
+            <div class="moment-image-wrapper">
+              <div class="moment-image img2"></div>
+            </div>
+            <div class="moment-content">
+              <h3 class="moment-card-title">Barista & Friends</h3>
+              <p class="moment-card-text">Genuine connections behind the bar</p>
+            </div>
+          </div>
+
+          <!-- Moment 3 -->
+          <div class="moment-card">
+            <div class="moment-image-wrapper">
+              <div class="moment-image img3"></div>
+            </div>
+            <div class="moment-content">
+              <h3 class="moment-card-title">Coffee Stories</h3>
+              <p class="moment-card-text">Every cup carries a story to share</p>
+            </div>
+          </div>
+
+          <!-- Moment 4 -->
+          <div class="moment-card">
+            <div class="moment-image-wrapper">
+              <div class="moment-image img4"></div>
+            </div>
+            <div class="moment-content">
+              <h3 class="moment-card-title">Creative Space</h3>
+              <p class="moment-card-text">
+                Where ideas flow as freely as coffee
+              </p>
+            </div>
+          </div>
+
+          <!-- Moment 5 -->
+          <div class="moment-card">
+            <div class="moment-image-wrapper">
+              <div class="moment-image img5"></div>
+            </div>
+            <div class="moment-content">
+              <h3 class="moment-card-title">Community Vibes</h3>
+              <p class="moment-card-text">Togetherness in every corner</p>
+            </div>
+          </div>
+
+          <!-- Moment 6 -->
+          <div class="moment-card">
+            <div class="moment-image-wrapper">
+              <div class="moment-image img6"></div>
+            </div>
+            <div class="moment-content">
+              <h3 class="moment-card-title">Coffee & Conversations</h3>
+              <p class="moment-card-text">Where friendships are brewed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS & ACTIVATIONS SECTION -->
+    <section class="section events" id="events">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-subtitle">02 — Gatherings & Stories</span>
+          <h2 class="section-title">Events & Activations</h2>
+          <p class="section-description">
+            Not just announcements, but stories that reflect engagement and
+            shared experience.
+          </p>
+        </div>
+
+        <div class="events-grid">
+          <!-- Event 1 -->
+          <div class="event-card">
+            <div class="event-image">
+              <div class="event-image-placeholder cupping"></div>
+            </div>
+            <div class="event-card-content">
+              <span class="event-tag">Coffee Session</span>
+              <h3 class="event-card-title">Monthly Cupping Experience</h3>
+              <p class="event-card-text">
+                Exploring flavor profiles together, sharing discoveries, and
+                deepening our coffee knowledge as a community.
+              </p>
+            </div>
+          </div>
+
+          <!-- Event 2 -->
+          <div class="event-card">
+            <div class="event-image">
+              <div class="event-image-placeholder collaboration"></div>
+            </div>
+            <div class="event-card-content">
+              <span class="event-tag">Collaboration</span>
+              <h3 class="event-card-title">Brew & Art: Local Artists Meet</h3>
+              <p class="event-card-text">
+                When creativity meets coffee — a gathering that sparked
+                conversations and future collaborations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Event 3 -->
+          <div class="event-card">
+            <div class="event-image">
+              <div class="event-image-placeholder gathering"></div>
+            </div>
+            <div class="event-card-content">
+              <span class="event-tag">Community Gathering</span>
+              <h3 class="event-card-title">Weekend Morning Meetup</h3>
+              <p class="event-card-text">
+                Regulars and newcomers sharing stories, laughter, and the simple
+                joy of coffee together.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CRAFTED CONNECTIONS SECTION -->
+    <section class="section crafted-connections" id="crafted-connections">
+      <div class="container">
+        <div class="connections-grid">
+          <div class="connections-content">
+            <span class="section-subtitle">03 — Philosophy</span>
+            <h2 class="section-title">Crafted Connections</h2>
+
+            <div class="connections-quote">
+              "Every cup served carries a moment. Every moment builds a
+              connection."
+            </div>
+
+            <p class="connections-text">
+              Malbourne connects coffee people, opens space for collaboration,
+              and becomes a meeting point for brands, communities, and
+              individuals. Here, coffee is more than a beverage — it's the
+              thread that weaves relationships and creates lasting bonds.
+            </p>
+          </div>
+
+          <div class="connections-image-col">
+            <div class="connections-image-wrapper">
+              <img
+                src="images/back1.jpg"
+                alt="Crafted Connections"
+                class="connections-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WhatsApp Float -->
+    <div class="whatsapp-float">
+      <div class="whatsapp-text">Butuh Bantuan?</div>
+      <a
+        href="https://wa.me/6281230780638"
+        target="_blank"
+        class="whatsapp-link"
+      >
+        <div class="whatsapp-icon">
+          <i class="fab fa-whatsapp"></i>
+        </div>
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo-section">
+            <img
+              src="images/logo2.png"
+              alt="Malbourne Coffee Co Logo"
+              class="footer-logo"
+            />
+            <p class="footer-brand">Malbourne Coffee Co</p>
+            <p class="footer-tagline">Crafted to Connect</p>
+          </div>
+
+          <div class="footer-columns">
+            <div class="footer-column">
+              <h3 class="column-title">Explore</h3>
+              <ul class="footer-menu">
+                <li><a href="index.html" class="footer-menu-link">Home</a></li>
+                <li><a href="story.html" class="footer-menu-link">Story</a></li>
+                <li>
+                  <a href="experience.html" class="footer-menu-link"
+                    >Experience</a
+                  >
+                </li>
+                <li>
+                  <a href="beans.html" class="footer-menu-link">Retail Beans</a>
+                </li>
+                <li>
+                  <a href="moment.html" class="footer-menu-link">Moment</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3 class="column-title">Coffee & Collaboration</h3>
+              <ul class="footer-menu">
+                <li>
+                  <a href="beans.html" class="footer-menu-link">Retail Beans</a>
+                </li>
+                <li>
+                  <a href="wholesale.html" class="footer-menu-link"
+                    >Beans Import & Wholesale</a
+                  >
+                </li>
+                <li>
+                  <a href="loyalty.html" class="footer-menu-link"
+                    >Loyalty Program</a
+                  >
+                </li>
+                <li>
+                  <a href="moment.html" class="footer-menu-link"
+                    >Community & Events</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3 class="column-title">Contact</h3>
+              <ul class="footer-contact">
+                <li class="contact-item">
+                  <i class="fas fa-map-marker-alt contact-icon"></i>
+                  <span>Jalan bantaran 2D Malang</span>
+                </li>
+                <li class="contact-item">
+                  <i class="fab fa-whatsapp contact-icon"></i>
+                  <a
+                    href="https://wa.me/6281230780638"
+                    target="_blank"
+                    class="contact-link"
+                    >+62 812-3078-0638</a
+                  >
+                </li>
+                <li class="contact-item">
+                  <i class="fas fa-envelope contact-icon"></i>
+                  <a href="mailto:info@malbournecoffee.com" class="contact-link"
+                    >Email</a
+                  >
+                </li>
+                <li class="contact-item">
+                  <i class="fas fa-phone contact-icon"></i>
+                  <a href="tel:+62341567890" class="contact-link"
+                    >+62 812-3078-0638</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <p class="footer-copyright">
+              Copyright © 2026 Malbourne Coffee Co | Powered by Malbourne Coffee
+              Co
+            </p>
+            <div class="footer-social">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://wa.me/6281230780638"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="moment.js"></script>
+  </body>
+</html>

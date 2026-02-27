@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Training | Malbourne Coffee Co</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="training.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img
+          src="images/logo2.png"
+          alt="Malbourne Coffee Co"
+          class="logo-img"
+        />
+      </a>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="story.html" class="nav-link">Story</a>
+
+        <div class="dropdown">
+          <a href="#" class="nav-link dropdown-toggle">
+            Experience
+            <i class="fas fa-chevron-down dropdown-icon"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="experience.html" class="dropdown-item">Experience</a>
+            <a href="menu.html" class="dropdown-item">Menu</a>
+            <a href="training.html" class="dropdown-item active">Training</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="#" class="nav-link dropdown-toggle">
+            Shop
+            <i class="fas fa-chevron-down dropdown-icon"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="beans.html" class="dropdown-item">Retail Beans</a>
+            <a href="wholesale.html" class="dropdown-item">Import & Wholesale</a>
+          </div>
+        </div>
+
+        <a href="moment.html" class="nav-link">Community</a>
+        <a href="loyalty.html" class="nav-link">Loyalty</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Overlay for mobile menu -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- MAIN CONTENT - TRAINING PAGE -->
+  <main class="training-page">
+
+    <!-- 1️⃣ HEADER SECTION - ABOVE THE FOLD -->
+    <section class="training-hero">
+      <div class="training-hero-background">
+        <div class="training-hero-overlay"></div>
+      </div>
+      <div class="container">
+        <div class="training-hero-content">
+          <h1 class="training-hero-title">Learn the Craft</h1>
+          <p class="training-hero-subtitle">
+            Malbourne's training programs are designed to share knowledge, 
+            refine skills, and deepen understanding of coffee — from 
+            fundamentals to hands-on practice.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2️⃣ INTRO - TRAINING PHILOSOPHY -->
+    <section class="training-philosophy">
+      <div class="container container-sm">
+        <p class="philosophy-text">
+          At Malbourne, training is not only about technique.<br />
+          It is about understanding process, intention, and consistency.<br />
+          Whether you are starting your journey or refining your craft, 
+          our programs are built to provide practical knowledge with 
+          real-world application.
+        </p>
+      </div>
+    </section>
+
+    <!-- 3️⃣ TRAINING PROGRAMS - CORE SECTION -->
+    <section class="training-programs">
+      <div class="container">
+        <h2 class="section-title">Our Programs</h2>
+        
+        <div class="programs-grid">
+          <!-- Program 1 -->
+          <div class="program-card">
+            <div class="program-number">01</div>
+            <h3 class="program-title">Basic Barista Program</h3>
+            <p class="program-description">
+              Introduction to coffee fundamentals, espresso calibration, 
+              milk texturing, and workflow efficiency. Designed for 
+              beginners or aspiring baristas.
+            </p>
+            <div class="program-meta">
+              <span class="meta-item">
+                <i class="far fa-clock"></i> Duration: 2 Days
+              </span>
+              <span class="meta-item">
+                <i class="far fa-chart-bar"></i> Level: Beginner
+              </span>
+            </div>
+            <a 
+              href="https://wa.me/15551234567?text=Hi%2C%20I'd%20like%20to%20book%20the%20Basic%20Barista%20Program." 
+              class="btn-program" 
+              target="_blank"
+            >
+              Book via WhatsApp <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+
+          <!-- Program 2 -->
+          <div class="program-card">
+            <div class="program-number">02</div>
+            <h3 class="program-title">Brewing & Extraction</h3>
+            <p class="program-description">
+              Focused on manual brewing methods, extraction theory, 
+              and flavor profiling. Ideal for those who want to deepen 
+              their understanding of coffee character.
+            </p>
+            <div class="program-meta">
+              <span class="meta-item">
+                <i class="far fa-clock"></i> Duration: 1 Day
+              </span>
+              <span class="meta-item">
+                <i class="far fa-chart-bar"></i> Level: Intermediate
+              </span>
+            </div>
+            <a 
+              href="https://wa.me/15551234567?text=Hi%2C%20I'd%20like%20to%20book%20the%20Brewing%20%26%20Extraction%20Program." 
+              class="btn-program" 
+              target="_blank"
+            >
+              Book via WhatsApp <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+
+          <!-- Program 3 -->
+          <div class="program-card">
+            <div class="program-number">03</div>
+            <h3 class="program-title">Advanced / Custom Session</h3>
+            <p class="program-description">
+              Tailored training designed for teams, businesses, or 
+              individuals seeking specific improvements in workflow, 
+              quality control, or menu development.
+            </p>
+            <div class="program-meta">
+              <span class="meta-item">
+                <i class="far fa-clock"></i> Duration: Flexible
+              </span>
+              <span class="meta-item">
+                <i class="far fa-chart-bar"></i> Level: Custom
+              </span>
+            </div>
+            <a 
+              href="https://wa.me/15551234567?text=Hi%2C%20I'd%20like%20to%20inquire%20about%20the%20Advanced%20Custom%20Session." 
+              class="btn-program" 
+              target="_blank"
+            >
+              Book via WhatsApp <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4️⃣ CONSULTATION SECTION (FORM → WA) -->
+    <section class="consultation-section">
+      <div class="container container-sm">
+        <h2 class="section-title">Need a Custom Consultation?</h2>
+        <p class="consultation-text">
+          If you are looking for a tailored session or business-focused 
+          consultation, share a few details with us and we will continue 
+          the conversation via WhatsApp.
+        </p>
+
+        <form id="consultationForm" class="consultation-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="whatsapp">WhatsApp Number</label>
+            <input type="tel" id="whatsapp" name="whatsapp" required>
+          </div>
+
+          <div class="form-group">
+            <label for="inquiry">Type of Inquiry</label>
+            <select id="inquiry" name="inquiry" required>
+              <option value="" disabled selected>Select one</option>
+              <option value="Individual Training">Individual Training</option>
+              <option value="Team Training">Team Training</option>
+              <option value="Business Consultation">Business Consultation</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="description">Short Description</label>
+            <textarea id="description" name="description" rows="3" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">
+            Submit & Continue to WhatsApp
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- 5️⃣ WHY TRAIN WITH MALBOURNE -->
+    <section class="why-train">
+      <div class="container container-sm">
+        <h2 class="section-title">More Than a Class</h2>
+        <p class="why-text">
+          Our training is grounded in real operational experience.<br />
+          We focus on consistency, practical workflow, and quality standards 
+          that reflect how a coffee company operates — not just how a recipe 
+          is followed.
+        </p>
+      </div>
+    </section>
+
+    <!-- 6️⃣ CTA SECTION -->
+    <section class="training-cta">
+      <div class="container">
+        <div class="cta-buttons">
+          <a href="#programs" class="btn-cta btn-cta-primary">
+            Book a Training Session
+          </a>
+          <a href="https://wa.me/15551234567" class="btn-cta btn-cta-secondary" target="_blank">
+            Chat with Us on WhatsApp <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo-section">
+          <img
+            src="images/logo2.png"
+            alt="Malbourne Coffee Co Logo"
+            class="footer-logo"
+          />
+          <p class="footer-brand">Malbourne Coffee Co</p>
+          <p class="footer-tagline">Crafted to Connect</p>
+        </div>
+
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h3 class="column-title">Explore</h3>
+            <ul class="footer-menu">
+              <li><a href="index.html" class="footer-menu-link">Home</a></li>
+              <li><a href="story.html" class="footer-menu-link">Story</a></li>
+              <li><a href="experience.html" class="footer-menu-link">Experience</a></li>
+              <li><a href="beans.html" class="footer-menu-link">Retail Beans</a></li>
+              <li><a href="community.html" class="footer-menu-link">Moment</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="column-title">Coffee & Collaboration</h3>
+            <ul class="footer-menu">
+              <li><a href="beans.html" class="footer-menu-link">Retail Beans</a></li>
+              <li><a href="wholesale.html" class="footer-menu-link">Beans Import & Wholesale</a></li>
+              <li><a href="loyalty.html" class="footer-menu-link">Loyalty Program</a></li>
+              <li><a href="community.html" class="footer-menu-link">Community & Events</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="column-title">Contact</h3>
+            <ul class="footer-contact">
+              <li class="contact-item">
+                <i class="fas fa-map-marker-alt contact-icon"></i>
+                <span>Jalan bantaran 2D Malang</span>
+              </li>
+              <li class="contact-item">
+                <i class="fab fa-whatsapp contact-icon"></i>
+                <a href="https://wa.me/15551234567" target="_blank" class="contact-link">+62 812-3078-0638</a>
+              </li>
+              <li class="contact-item">
+                <i class="fas fa-envelope contact-icon"></i>
+                <a href="mailto:info@malbournecoffee.com" class="contact-link">Email</a>
+              </li>
+              <li class="contact-item">
+                <i class="fas fa-phone contact-icon"></i>
+                <a href="tel:+62341567890" class="contact-link">+62 812-3078-0638</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p class="footer-copyright">
+            Copyright © 2026 Malbourne Coffee Co | Powered by Malbourne Coffee Co
+          </p>
+          <div class="footer-social">
+            <a href="https://instagram.com" target="_blank" class="social-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/15551234567" target="_blank" class="social-link">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float Button -->
+  <div class="whatsapp-float">
+    <div class="whatsapp-text">Butuh Bantuan?</div>
+    <a href="https://wa.me/15551234567" target="_blank" class="whatsapp-link">
+      <div class="whatsapp-icon">
+        <i class="fab fa-whatsapp"></i>
+      </div>
+    </a>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="training.js"></script>
+</body>
+</html>
