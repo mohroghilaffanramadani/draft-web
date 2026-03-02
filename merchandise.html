@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchandise | Malbourne Coffee Co</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="merchandise.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo2.png" alt="Malbourne Coffee Co" class="logo-img">
+            </a>
+
+            <div class="nav-menu">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="story.html" class="nav-link">Story</a>
+
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        Experience
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="experience.html" class="dropdown-item">Experience</a>
+                        <a href="menu.html" class="dropdown-item">Menu</a>
+                        <a href="training.html" class="dropdown-item">Training</a>
+                    </div>
+                </div>
+
+            <div class="dropdown">
+              <a href="#beans" class="nav-link dropdown-toggle">
+                Shop
+                <i class="fas fa-chevron-down dropdown-icon"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a href="#beans" class="dropdown-item">Retail Beans</a>
+                <a href="wholesale.html" class="dropdown-item">Wholesale</a>
+                <a href="merchandise.html" class="dropdown-item">Merchandise</a>
+              </div>
+            </div>
+
+                <a href="moment.html" class="nav-link">Community</a>
+                <a href="loyalty.html" class="nav-link">Loyalty</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 1️⃣ HERO SECTION -->
+    <section class="merch-hero" id="merch-hero">
+        <div class="merch-hero-background"></div>
+        <div class="merch-hero-overlay"></div>
+        
+        <div class="container merch-hero-container">
+            <div class="merch-hero-content">
+                <span class="hero-badge">Beyond the Cup</span>
+                <h1 class="merch-hero-title">
+                    <span class="text-accent">Merch</span>andise
+                </h1>
+                
+                <p class="merch-hero-subheadline">
+                    Crafted Beyond the Cup
+                </p>
+                
+                <p class="merch-hero-narrative">
+                    Our merchandise reflects the same philosophy behind every cup we serve — intentional, functional, and thoughtfully designed to be part of your daily rhythm.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2️⃣ COLLECTION OVERVIEW SECTION -->
+    <section class="merch-collections section" id="merch-collections">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-subtitle">Our Collections</span>
+                <h2 class="section-title">Designed for <span class="text-accent">Daily Life</span></h2>
+            </div>
+
+            <div class="collections-grid">
+                <!-- Apparel -->
+                <div class="collection-card">
+                    <div class="collection-image apparel-bg"></div>
+                    <div class="collection-content">
+                        <h3 class="collection-title">Apparel</h3>
+                        <p class="collection-description">
+                            Minimalist designs that represent the Malbourne identity.
+                        </p>
+                        <a href="#featured-products" class="collection-link">
+                            <span>Explore Apparel</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Brewing Tools -->
+                <div class="collection-card">
+                    <div class="collection-image tools-bg"></div>
+                    <div class="collection-content">
+                        <h3 class="collection-title">Brewing Tools</h3>
+                        <p class="collection-description">
+                            Functional tools selected for quality and daily use.
+                        </p>
+                        <a href="#featured-products" class="collection-link">
+                            <span>Explore Tools</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Accessories -->
+                <div class="collection-card">
+                    <div class="collection-image accessories-bg"></div>
+                    <div class="collection-content">
+                        <h3 class="collection-title">Accessories</h3>
+                        <p class="collection-description">
+                            Thoughtfully designed everyday items.
+                        </p>
+                        <a href="#featured-products" class="collection-link">
+                            <span>Explore Accessories</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3️⃣ FEATURED PRODUCTS SECTION -->
+    <section class="merch-products section" id="featured-products">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-subtitle">Curated Selection</span>
+                <h2 class="section-title">Featured <span class="text-accent">Products</span></h2>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product 1 - Tote Bag -->
+                <div class="product-card">
+                    <div class="product-image tote-bag"></div>
+                    <div class="product-content">
+                        <h3 class="product-name">Malbourne Tote Bag</h3>
+                        <p class="product-description">
+                            Durable canvas tote designed for daily essentials.
+                        </p>
+                        <div class="product-detail">
+                            <span class="detail-label">Material:</span>
+                            <span class="detail-value">Heavyweight Cotton Canvas</span>
+                        </div>
+                        <a href="https://wa.me/6281230780638" target="_blank" class="product-btn">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2 - Tumbler -->
+                <div class="product-card">
+                    <div class="product-image tumbler"></div>
+                    <div class="product-content">
+                        <h3 class="product-name">Malbourne Tumbler</h3>
+                        <p class="product-description">
+                            Minimal stainless steel tumbler built for everyday use.
+                        </p>
+                        <div class="product-detail">
+                            <span class="detail-label">Material:</span>
+                            <span class="detail-value">Double-wall insulated steel</span>
+                        </div>
+                        <a href="https://wa.me/6281230780638" target="_blank" class="product-btn">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3 - Cap -->
+                <div class="product-card">
+                    <div class="product-image cap"></div>
+                    <div class="product-content">
+                        <h3 class="product-name">Malbourne Cap</h3>
+                        <p class="product-description">
+                            Clean cotton cap with embroidered logo.
+                        </p>
+                        <div class="product-detail">
+                            <span class="detail-label">Material:</span>
+                            <span class="detail-value">Cotton Twill</span>
+                        </div>
+                        <a href="https://wa.me/6281230780638" target="_blank" class="product-btn">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 4 - Apron -->
+                <div class="product-card">
+                    <div class="product-image apron"></div>
+                    <div class="product-content">
+                        <h3 class="product-name">Barista Apron</h3>
+                        <p class="product-description">
+                            Heavyweight apron designed for comfort and durability.
+                        </p>
+                        <div class="product-detail">
+                            <span class="detail-label">Material:</span>
+                            <span class="detail-value">Cotton Canvas</span>
+                        </div>
+                        <a href="https://wa.me/6281230780638" target="_blank" class="product-btn">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 5 - Coffee Scoop -->
+                <div class="product-card">
+                    <div class="product-image scoop"></div>
+                    <div class="product-content">
+                        <h3 class="product-name">Coffee Scoop</h3>
+                        <p class="product-description">
+                            Solid wood scoop for precise coffee measurement.
+                        </p>
+                        <div class="product-detail">
+                            <span class="detail-label">Material:</span>
+                            <span class="detail-value">Oak Wood</span>
+                        </div>
+                        <a href="https://wa.me/6281230780638" target="_blank" class="product-btn">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 6 - Sticker Set -->
+                <div class="product-card">
+                    <div class="product-image stickers"></div>
+                    <div class="product-content">
+                        <h3 class="product-name">Sticker Set</h3>
+                        <p class="product-description">
+                            Die-cut stickers featuring Malbourne identity.
+                        </p>
+                        <div class="product-detail">
+                            <span class="detail-label">Material:</span>
+                            <span class="detail-value">Vinyl</span>
+                        </div>
+                        <a href="https://wa.me/6281230780638" target="_blank" class="product-btn">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4️⃣ DESIGN PHILOSOPHY SECTION -->
+    <section class="merch-philosophy section" id="merch-philosophy">
+        <div class="container">
+            <div class="philosophy-content">
+                <span class="section-subtitle">Our Approach</span>
+                <h2 class="philosophy-title">
+                    Designed with <span class="text-accent">Intention</span>
+                </h2>
+                
+                <p class="philosophy-text">
+                    Each merchandise piece is developed with the same attention to detail that defines our coffee. We prioritize functionality, durability, and subtle design — ensuring every item feels like a natural extension of the Malbourne experience.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5️⃣ HOW TO ORDER SECTION -->
+    <section class="merch-howto section" id="merch-howto">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-subtitle">Simple Process</span>
+                <h2 class="section-title">How to <span class="text-accent">Order</span></h2>
+            </div>
+
+            <div class="howto-grid">
+                <!-- Step 1 -->
+                <div class="howto-step">
+                    <div class="step-number">01</div>
+                    <h3 class="step-title">Select your item</h3>
+                    <p class="step-description">
+                        Browse our collection and choose the merchandise you want.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="howto-step">
+                    <div class="step-number">02</div>
+                    <h3 class="step-title">Contact us via WhatsApp</h3>
+                    <p class="step-description">
+                        Send us your order details through WhatsApp.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="howto-step">
+                    <div class="step-number">03</div>
+                    <h3 class="step-title">Confirm availability and delivery</h3>
+                    <p class="step-description">
+                        We'll confirm stock and arrange shipping or pickup.
+                    </p>
+                </div>
+            </div>
+
+            <div class="howto-cta">
+                <a href="https://wa.me/6281230780638" target="_blank" class="btn btn-primary howto-btn">
+                    <i class="fab fa-whatsapp"></i> Order Merchandise via WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6️⃣ SOFT CTA SECTION -->
+    <section class="merch-cta section" id="merch-cta">
+        <div class="container">
+            <div class="cta-card">
+                <h2 class="cta-title">Carry the Experience <span class="text-accent">With You</span></h2>
+                <p class="cta-text">
+                    Bring a part of Malbourne into your daily routine.
+                </p>
+                
+                <div class="cta-buttons">
+                    <a href="https://wa.me/6281230780638" target="_blank" class="btn btn-primary cta-btn">
+                        <i class="fab fa-whatsapp"></i> Chat with Us on WhatsApp
+                    </a>
+                    <a href="beans.html" class="btn btn-secondary cta-btn">
+                        Explore Retail Beans
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float -->
+    <div class="whatsapp-float">
+        <div class="whatsapp-text">Butuh Bantuan?</div>
+        <a href="https://wa.me/6281230780638" target="_blank" class="whatsapp-link">
+            <div class="whatsapp-icon">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo-section">
+            <img
+              src="images/logo2.png"
+              alt="Malbourne Coffee Co Logo"
+              class="footer-logo"
+            />
+            <p class="footer-brand">Malbourne Coffee Co</p>
+          </div>
+
+          <div class="footer-columns">
+            <div class="footer-column">
+              <h3 class="column-title">Explore</h3>
+              <ul class="footer-menu">
+                <li><a href="index.html" class="footer-menu-link">Home</a></li>
+                <li><a href="story.html" class="footer-menu-link">Story</a></li>
+                <li>
+                  <a href="experience.html" class="footer-menu-link"
+                    >Experience</a
+                  >
+                </li>
+                <li>
+                  <a href="beans.html" class="footer-menu-link">Retail Beans</a>
+                </li>
+                <li>
+                  <a href="moment.html" class="footer-menu-link">Moment</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3 class="column-title">Coffee & Collaboration</h3>
+              <ul class="footer-menu">
+                <li>
+                  <a href="beans.html" class="footer-menu-link">Retail Beans</a>
+                </li>
+                <li>
+                  <a href="wholesale.html" class="footer-menu-link"
+                    >Wholesale</a
+                  >
+                </li>
+                <li>
+                  <a href="moment.html" class="footer-menu-link">Community </a>
+                </li>
+                <li>
+                  <a href="loyalty.html" class="footer-menu-link"
+                    >Loyalty Program</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3 class="column-title">Contact</h3>
+              <ul class="footer-contact">
+                <li class="contact-item">
+                  <i class="fas fa-map-marker-alt contact-icon"></i>
+                  <span>Jalan bantaran 2D Malang</span>
+                </li>
+                <li class="contact-item">
+                  <i class="fab fa-whatsapp contact-icon"></i>
+                  <a
+                    href="https://wa.me/6281230780638"
+                    target="_blank"
+                    class="contact-link"
+                    >Malbourne Coffee CO</a
+                  >
+                </li>
+                <li class="contact-item">
+                  <i class="fas fa-envelope contact-icon"></i>
+                  <a href="mailto:Malbournecoffeeco@gmail.com" class="contact-link"
+                    >Email</a
+                  >
+                </li>
+                <li class="contact-item">
+                  <i class="fas fa-phone contact-icon"></i>
+                  <a href="tel:+6281230780638" class="contact-link">Call us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <p class="footer-copyright">
+              Copyright © 2026 Malbourne Coffee Co | Powered by Malbourne Coffee
+              Co
+            </p>
+
+            <div class="footer-social">
+              <a
+                href="https://www.instagram.com/malbournecoffeeco?igsh=Zzh0dnV0Mm42ejNi"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://wa.me/6281230780638?text=Hi%2C%20I%20found%20Malbourne%20Coffee%20Co%20through%20your%20website%20and%20would%20like%20to%20get%20more%20information."
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="merchandise.js"></script>
+</body>
+</html>

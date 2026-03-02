@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retail Beans | Malbourne Coffee Co</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="beans.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img
+            src="images/logo2.png"
+            alt="Malbourne Coffee Co"
+            class="logo-img"
+          />
+        </a>
+
+        <div class="nav-menu">
+          <a href="index.html#home" class="nav-link">Home</a>
+          <a href="story.html" class="nav-link">Story</a>
+
+          <div class="dropdown">
+            <a href="#" class="nav-link dropdown-toggle">
+              Experience
+              <i class="fas fa-chevron-down dropdown-icon"></i>
+            </a>
+            <div class="dropdown-menu">
+              <a href="experience.html" class="dropdown-item">Experience</a>
+              <a href="menu.html" class="dropdown-item">Menu</a>
+              <a href="training.html" class="dropdown-item">Training</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <a href="#beans" class="nav-link dropdown-toggle">
+              Shop
+              <i class="fas fa-chevron-down dropdown-icon"></i>
+            </a>
+            <div class="dropdown-menu">
+              <a href="#beans" class="dropdown-item">Retail Beans</a>
+              <a href="wholesale.html" class="dropdown-item">Wholesale</a>
+              <a href="merchandise.html" class="dropdown-item">Merchandise</a>
+            </div>
+          </div>
+
+          <a href="moment.html" class="nav-link">Community</a>
+          <a href="loyalty.html" class="nav-link">Loyalty</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+
+        <button class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- 1️⃣ HERO / INTRO SECTION - TANPA FOTO -->
+    <section class="beans-hero" id="beans-hero">
+      <div class="container beans-hero-container">
+        <div class="beans-hero-content">
+          <div class="hero-badge-wrapper">
+            <span class="hero-badge">Curated Selection</span>
+          </div>
+
+          <h1 class="beans-hero-title">
+            Retail <span class="text-accent">Beans</span>
+          </h1>
+
+          <div class="hero-subheadline-wrapper">
+            <p class="beans-hero-subheadline">
+              Crafted to bring the Malbourne experience into your daily ritual.
+            </p>
+          </div>
+
+          <div class="hero-divider"></div>
+
+          <p class="beans-hero-narrative">
+            Our retail selections reflect the same commitment to process,
+            balance, and consistency that defines every cup we serve.
+          </p>
+
+          <div class="hero-decorative">
+            <span class="decorative-dot"></span>
+            <span class="decorative-dot"></span>
+            <span class="decorative-dot"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Decorative Bottom Line -->
+      <div class="hero-bottom-line"></div>
+    </section>
+
+    <!-- 2️⃣ CATEGORY NAVIGATION SECTION -->
+    <section class="beans-categories section" id="beans-categories">
+      <div class="container">
+        <div class="categories-grid">
+          <!-- Espresso Card -->
+          <div class="category-card espresso-card">
+            <div class="category-card-image espresso-bg"></div>
+            <div class="category-card-content">
+              <h2 class="category-card-title">Espresso</h2>
+              <p class="category-card-description">
+                Roasted to perform under pressure. Designed for balance, body,
+                and sweetness in espresso-based drinks.
+              </p>
+              <a href="#espresso-collection" class="category-card-btn">
+                <span>Explore Espresso</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Filter Card -->
+          <div class="category-card filter-card">
+            <div class="category-card-image filter-bg"></div>
+            <div class="category-card-content">
+              <h2 class="category-card-title">Filter</h2>
+              <p class="category-card-description">
+                Roasted to highlight clarity and origin character. Ideal for
+                manual brewing methods and slow appreciation.
+              </p>
+              <a href="#filter-collection" class="category-card-btn">
+                <span>Explore Filter</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3️⃣ ESPRESSO COLLECTION SECTION -->
+    <section class="beans-collection section" id="espresso-collection">
+      <div class="container">
+        <div class="collection-header">
+          <span class="section-subtitle">01 — For Espresso</span>
+          <h2 class="section-title">
+            Espresso <span class="text-accent">Collection</span>
+          </h2>
+        </div>
+
+        <div class="collection-grid">
+          <!-- Product 1 - Malbourne Signature Blend -->
+          <div class="product-card">
+            <div class="product-image signature-blend"></div>
+            <div class="product-content">
+              <h3 class="product-name">Malbourne Signature Blend</h3>
+              <p class="product-flavor">
+                Dark Chocolate • Caramel • Toasted Almond
+              </p>
+
+              <div class="product-details">
+                <div class="product-detail-item">
+                  <span class="detail-label">Roast Level</span>
+                  <span class="detail-value">Medium</span>
+                </div>
+                <div class="product-detail-item">
+                  <span class="detail-label">Origin</span>
+                  <span class="detail-value">Brazil & Indonesia</span>
+                </div>
+                <div class="product-detail-item">
+                  <span class="detail-label">Process</span>
+                  <span class="detail-value">Natural & Washed</span>
+                </div>
+              </div>
+
+              <div class="product-weight">
+                <span class="weight-option">250g</span>
+                <span class="weight-option">1kg</span>
+              </div>
+
+              <a
+                href="https://wa.me/6281230780638"
+                target="_blank"
+                class="product-btn"
+              >
+                <i class="fab fa-whatsapp"></i> Order via WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Product 2 - House Blend -->
+          <div class="product-card">
+            <div class="product-image house-blend"></div>
+            <div class="product-content">
+              <h3 class="product-name">House Blend</h3>
+              <p class="product-flavor">Milk Chocolate • Nuts • Brown Sugar</p>
+
+              <div class="product-details">
+                <div class="product-detail-item">
+                  <span class="detail-label">Roast Level</span>
+                  <span class="detail-value">Medium-Dark</span>
+                </div>
+                <div class="product-detail-item">
+                  <span class="detail-label">Origin</span>
+                  <span class="detail-value">Colombia & Sumatra</span>
+                </div>
+                <div class="product-detail-item">
+                  <span class="detail-label">Process</span>
+                  <span class="detail-value">Washed</span>
+                </div>
+              </div>
+
+              <div class="product-weight">
+                <span class="weight-option">250g</span>
+                <span class="weight-option">1kg</span>
+              </div>
+
+              <a
+                href="https://wa.me/6281230780638"
+                target="_blank"
+                class="product-btn"
+              >
+                <i class="fab fa-whatsapp"></i> Order via WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Product 3 - Decaf Espresso -->
+          <div class="product-card">
+            <div class="product-image decaf-espresso"></div>
+            <div class="product-content">
+              <h3 class="product-name">Decaf Espresso</h3>
+              <p class="product-flavor">Cocoa • Hazelnut • Smooth</p>
+
+              <div class="product-details">
+                <div class="product-detail-item">
+                  <span class="detail-label">Roast Level</span>
+                  <span class="detail-value">Medium</span>
+                </div>
+                <div class="product-detail-item">
+                  <span class="detail-label">Origin</span>
+                  <span class="detail-value">Colombia</span>
+                </div>
+                <div class="product-detail-item">
+                  <span class="detail-label">Process</span>
+                  <span class="detail-value">EA Decaf</span>
+                </div>
+              </div>
+
+              <div class="product-weight">
+                <span class="weight-option">250g</span>
+                <span class="weight-option">1kg</span>
+              </div>
+
+              <a
+                href="https://wa.me/6281230780638"
+                target="_blank"
+                class="product-btn"
+              >
+                <i class="fab fa-whatsapp"></i> Order via WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4️⃣ FILTER COLLECTION SECTION -->
+    <section class="beans-collection section" id="filter-collection">
+      <div class="container">
+        <div class="collection-header">
+          <span class="section-subtitle">02 — For Manual Brewing</span>
+          <h2 class="section-title">
+            Filter <span class="text-accent">Collection</span>
+          </h2>
+        </div>
+
+        <div class="collection-grid">
+          <!-- Product 1 - Ethiopia Guji -->
+          <div class="product-card">
+            <div class="product-image ethiopia-guji"></div>
+            <div class="product-content">
+              <h3 class="product-name">Ethiopia Guji</h3>
+              <p class="product-flavor">Floral • Citrus • Honey</p>
+
+              <div class="product-details">
+                <div class="product-detail-item">
+                  <span class="detail-label">Roast Level</span>
+                  <span class="detail-value">Light</span>
+                </div>
+                <div class="product-detail-item">
+                  <span class="detail-label">Origin</span>
+                  <span class="detail-value">Ethiopia</span>
+                </div>
+                <div class="product-detail-item">
+                  <span class="detail-label">Process</span>
+                  <span class="detail-value">Washed</span>
+                </div>
+              </div>
+
+              <div class="product-weight">
+                <span class="weight-option">250g</span>
+                <span class="weight-option">1kg</span>
+              </div>
+
+              <a
+                href="https://wa.me/6281230780638"
+                target="_blank"
+                class="product-btn"
+              >
+                <i class="fab fa-whatsapp"></i> Order via WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Product 2 - Kenya Kirinyaga -->
+          <div class="product-card">
+            <div class="product-image kenya"></div>
+            <div class="product-content">
+              <h3 class="product-name">Kenya Kirinyaga</h3>
+              <p class="product-flavor">Blackcurrant • Tomato • Brown Sugar</p>
+
+              <div class="product-details">
+                <div class="product-detail-item">
+                  <span class="detail-label">Roast Level</span>
+                  <span class="detail-value">Light-Medium</span>
+                </div>
+                <div class="product-detail-item">
+                  <span class="detail-label">Origin</span>
+                  <span class="detail-value">Kenya</span>
+                </div>
+                <div class="product-detail-item">
+                  <span class="detail-label">Process</span>
+                  <span class="detail-value">Washed</span>
+                </div>
+              </div>
+
+              <div class="product-weight">
+                <span class="weight-option">250g</span>
+                <span class="weight-option">1kg</span>
+              </div>
+
+              <a
+                href="https://wa.me/6281230780638"
+                target="_blank"
+                class="product-btn"
+              >
+                <i class="fab fa-whatsapp"></i> Order via WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Product 3 - Colombia Geisha -->
+          <div class="product-card">
+            <div class="product-image colombia-geisha"></div>
+            <div class="product-content">
+              <h3 class="product-name">Colombia Geisha</h3>
+              <p class="product-flavor">Jasmine • Bergamot • Honey</p>
+
+              <div class="product-details">
+                <div class="product-detail-item">
+                  <span class="detail-label">Roast Level</span>
+                  <span class="detail-value">Light</span>
+                </div>
+                <div class="product-detail-item">
+                  <span class="detail-label">Origin</span>
+                  <span class="detail-value">Colombia</span>
+                </div>
+                <div class="product-detail-item">
+                  <span class="detail-label">Process</span>
+                  <span class="detail-value">Washed</span>
+                </div>
+              </div>
+
+              <div class="product-weight">
+                <span class="weight-option">250g</span>
+                <span class="weight-option">1kg</span>
+              </div>
+
+              <a
+                href="https://wa.me/6281230780638"
+                target="_blank"
+                class="product-btn"
+              >
+                <i class="fab fa-whatsapp"></i> Order via WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5️⃣ QUALITY & ROASTING PHILOSOPHY -->
+    <section class="beans-philosophy section">
+      <div class="container">
+        <div class="philosophy-content">
+          <span class="section-subtitle">Our Approach</span>
+          <h2 class="philosophy-title">
+            Roasted with <span class="text-accent">Intention</span>
+          </h2>
+
+          <p class="philosophy-text">
+            Every retail selection is developed with precision and consistency.
+            From sourcing to roasting and packaging, each detail reflects our
+            commitment to quality and transparency.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6️⃣ HOW TO ORDER -->
+    <section class="beans-howto section">
+      <div class="container">
+        <div class="howto-header centered">
+          <span class="section-subtitle">Simple Process</span>
+          <h2 class="section-title">
+            How to <span class="text-accent">Order</span>
+          </h2>
+        </div>
+
+        <div class="howto-grid">
+          <div class="howto-step">
+            <div class="step-number">01</div>
+            <div class="step-content">
+              <h3 class="step-title">Choose your selection</h3>
+              <p class="step-description">
+                Browse our espresso and filter collections, find the perfect
+                beans for your brewing method.
+              </p>
+            </div>
+          </div>
+
+          <div class="howto-step">
+            <div class="step-number">02</div>
+            <div class="step-content">
+              <h3 class="step-title">Contact us via WhatsApp</h3>
+              <p class="step-description">
+                Send us your order details through WhatsApp. Our team will
+                confirm availability.
+              </p>
+            </div>
+          </div>
+
+          <div class="howto-step">
+            <div class="step-number">03</div>
+            <div class="step-content">
+              <h3 class="step-title">Confirm details and delivery</h3>
+              <p class="step-description">
+                We'll help you arrange shipping or pickup, and ensure your beans
+                arrive fresh.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="howto-cta">
+          <a
+            href="https://wa.me/6281230780638"
+            target="_blank"
+            class="btn btn-primary howto-btn"
+          >
+            <i class="fab fa-whatsapp"></i> Order Retail Beans
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7️⃣ SOFT CTA -->
+    <section class="beans-cta section">
+      <div class="container">
+        <div class="cta-card">
+          <h2 class="cta-card-title">Bring the Experience Home</h2>
+          <p class="cta-card-text">
+            Enjoy Malbourne's craftsmanship beyond our space. Take the same
+            quality we serve in our cafe into your daily ritual.
+          </p>
+
+          <div class="cta-card-buttons">
+            <a
+              href="https://wa.me/6281230780638"
+              target="_blank"
+              class="btn btn-primary cta-card-btn"
+            >
+              <i class="fab fa-whatsapp"></i> Order via WhatsApp
+            </a>
+            <a href="wholesale.html" class="btn btn-secondary cta-card-btn">
+              Explore Wholesale Options
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WhatsApp Float -->
+    <div class="whatsapp-float">
+      <div class="whatsapp-text">Butuh Bantuan?</div>
+      <a
+        href="https://wa.me/6281230780638?text=Hi%2C%20I%E2%80%99m%20interested%20in%20your%20retail%20beans.%20Could%20you%20share%20the%20available%20options%20and%20prices%3F"
+        target="_blank"
+        class="whatsapp-link"
+      >
+        <div class="whatsapp-icon">
+          <i class="fab fa-whatsapp"></i>
+        </div>
+      </a>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo-section">
+            <img
+              src="images/logo2.png"
+              alt="Malbourne Coffee Co Logo"
+              class="footer-logo"
+            />
+            <p class="footer-brand">Malbourne Coffee Co</p>
+          </div>
+
+          <div class="footer-columns">
+            <div class="footer-column">
+              <h3 class="column-title">Explore</h3>
+              <ul class="footer-menu">
+                <li><a href="index.html" class="footer-menu-link">Home</a></li>
+                <li><a href="story.html" class="footer-menu-link">Story</a></li>
+                <li>
+                  <a href="experience.html" class="footer-menu-link"
+                    >Experience</a
+                  >
+                </li>
+                <li>
+                  <a href="beans.html" class="footer-menu-link">Retail Beans</a>
+                </li>
+                <li>
+                  <a href="moment.html" class="footer-menu-link">Moment</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3 class="column-title">Coffee & Collaboration</h3>
+              <ul class="footer-menu">
+                <li>
+                  <a href="beans.html" class="footer-menu-link">Retail Beans</a>
+                </li>
+                <li>
+                  <a href="wholesale.html" class="footer-menu-link"
+                    >Wholesale</a
+                  >
+                </li>
+                <li>
+                  <a href="moment.html" class="footer-menu-link">Community </a>
+                </li>
+                <li>
+                  <a href="loyalty.html" class="footer-menu-link"
+                    >Loyalty Program</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3 class="column-title">Contact</h3>
+              <ul class="footer-contact">
+                <li class="contact-item">
+                  <i class="fas fa-map-marker-alt contact-icon"></i>
+                  <span>Jalan bantaran 2D Malang</span>
+                </li>
+                <li class="contact-item">
+                  <i class="fab fa-whatsapp contact-icon"></i>
+                  <a
+                    href="https://wa.me/6281230780638"
+                    target="_blank"
+                    class="contact-link"
+                    >Malbourne Coffee CO</a
+                  >
+                </li>
+                <li class="contact-item">
+                  <i class="fas fa-envelope contact-icon"></i>
+                  <a
+                    href="mailto:Malbournecoffeeco@gmail.com"
+                    class="contact-link"
+                    >Email</a
+                  >
+                </li>
+                <li class="contact-item">
+                  <i class="fas fa-phone contact-icon"></i>
+                  <a href="tel:+6281230780638" class="contact-link">Call us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <p class="footer-copyright">
+              Copyright © 2026 Malbourne Coffee Co | Powered by Malbourne Coffee
+              Co
+            </p>
+
+            <div class="footer-social">
+              <a
+                href="https://www.instagram.com/malbournecoffeeco?igsh=Zzh0dnV0Mm42ejNi"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://wa.me/6281230780638?text=Hi%2C%20I%20found%20Malbourne%20Coffee%20Co%20through%20your%20website%20and%20would%20like%20to%20get%20more%20information."
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="beans.js"></script>
+  </body>
+</html>

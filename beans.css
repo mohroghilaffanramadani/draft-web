@@ -1,0 +1,1223 @@
+/* Beans Page Styles */
+
+:root {
+  --beans-accent: #7f8565;
+  --beans-text-light: #4b4b4b;
+  --bg-primary: #faf8f5;
+  --bg-secondary: #f5f2ed;
+}
+
+/* ===== 1️⃣ HERO / INTRO SECTION - TANPA FOTO ===== */
+.beans-hero {
+  min-height: 80vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: calc(-1 * var(--nav-height));
+  background: linear-gradient(145deg, #ffffff 0%, #faf8f5 100%);
+  overflow: hidden;
+  padding: 6rem 0 4rem;
+}
+
+/* Decorative background elements */
+.beans-hero::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(
+    circle,
+    rgba(127, 133, 101, 0.03) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.beans-hero::after {
+  content: "";
+  position: absolute;
+  bottom: -20%;
+  left: -5%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(
+    circle,
+    rgba(127, 133, 101, 0.02) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.beans-hero-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.beans-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+
+/* Badge wrapper with animation */
+.hero-badge-wrapper {
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.hero-badge {
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #7f8565;
+  padding: 0.5rem 1rem;
+  background: rgba(127, 133, 101, 0.08);
+  border-radius: 30px;
+  border: 1px solid rgba(127, 133, 101, 0.15);
+}
+
+/* Main title */
+.beans-hero-title {
+  font-family: "Crimson Pro", serif;
+  font-weight: 400;
+  font-size: 4.5rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  color: #2a211c;
+  letter-spacing: -0.02em;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.4s;
+}
+
+.text-accent {
+  color: #7f8565;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+}
+
+.text-accent::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: rgba(127, 133, 101, 0.15);
+  z-index: -1;
+  border-radius: 4px;
+}
+
+/* Subheadline wrapper */
+.hero-subheadline-wrapper {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.6s;
+}
+
+.beans-hero-subheadline {
+  font-family: "Crimson Pro", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: #4a3f38;
+  font-style: italic;
+}
+
+/* Decorative divider */
+.hero-divider {
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #7f8565, transparent);
+  margin: 2rem auto;
+  opacity: 0;
+  transform: scaleX(0);
+  animation: scaleIn 0.8s ease forwards;
+  animation-delay: 0.8s;
+}
+
+@keyframes scaleIn {
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+/* Narrative text */
+.beans-hero-narrative {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #5a524c;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 1s;
+}
+
+/* Decorative dots */
+.hero-decorative {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+  animation-delay: 1.2s;
+}
+
+.decorative-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #7f8565;
+  border-radius: 50%;
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}
+
+.decorative-dot:nth-child(2) {
+  opacity: 0.5;
+  width: 8px;
+  height: 8px;
+}
+
+.decorative-dot:nth-child(3) {
+  opacity: 0.7;
+}
+
+/* Bottom line decoration */
+.hero-bottom-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(127, 133, 101, 0.2),
+    rgba(127, 133, 101, 0.5),
+    rgba(127, 133, 101, 0.2),
+    transparent
+  );
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ===== 2️⃣ CATEGORY NAVIGATION ===== */
+.beans-categories {
+  background-color: var(--bg-primary);
+  padding: 5rem 0;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.category-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+  height: 500px;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 50px -20px rgba(127, 133, 101, 0.3);
+}
+
+.category-card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+  z-index: 1;
+}
+
+.category-card:hover .category-card-image {
+  transform: scale(1.08);
+}
+
+.espresso-bg {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url("images/espresso.jpg");
+}
+
+.filter-bg {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url("images/filter.jpg");
+}
+
+.category-card-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 3rem 2.5rem;
+  color: white;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.category-card-title {
+  font-family: "Crimson Pro", serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.category-card-description {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 300px;
+  opacity: 0.9;
+}
+
+.category-card-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.category-card-btn i {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.category-card-btn:hover {
+  border-bottom-color: #7f8565;
+}
+
+.category-card-btn:hover i {
+  transform: translateX(8px);
+}
+
+/* ===== 3️⃣ & 4️⃣ COLLECTIONS ===== */
+.beans-collection {
+  background-color: var(--bg-primary);
+  padding: 5rem 0;
+}
+
+.beans-collection:nth-child(even) {
+  background-color: var(--bg-secondary);
+}
+
+.collection-header {
+  margin-bottom: 3rem;
+  max-width: 700px;
+}
+
+.section-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #7f8565;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.section-title {
+  font-family: "Crimson Pro", serif;
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: #2a211c;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px -8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(127, 133, 101, 0.1);
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px -12px rgba(127, 133, 101, 0.25);
+}
+
+.product-image {
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+/* Product Images */
+.signature-blend {
+  background-image: url("images/1.jpg");
+}
+
+.house-blend {
+  background-image: url("images/2.jpg");
+}
+
+.decaf-espresso {
+  background-image: url("images/3.jpg");
+}
+
+.ethiopia-guji {
+  background-image: url("images/4.jpg");
+}
+
+.kenya {
+  background-image: url("images/5.jpg");
+}
+
+.colombia-geisha {
+  background-image: url("images/6.jpg");
+}
+
+.product-content {
+  padding: 1.8rem;
+}
+
+.product-name {
+  font-family: "Crimson Pro", serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #2a211c;
+  margin-bottom: 0.5rem;
+}
+
+.product-flavor {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  color: #7f8565;
+  font-style: italic;
+  margin-bottom: 1.2rem;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(127, 133, 101, 0.1);
+  border-bottom: 1px solid rgba(127, 133, 101, 0.1);
+}
+
+.product-detail-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.detail-label {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #5a524c;
+}
+
+.detail-value {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #2a211c;
+}
+
+.product-weight {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.weight-option {
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  background-color: var(--bg-secondary);
+  border-radius: 30px;
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #5a524c;
+}
+
+.product-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+  background-color: #7f8565;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 1px solid #7f8565;
+}
+
+.product-btn:hover {
+  background-color: #6b7352;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px -8px rgba(127, 133, 101, 0.5);
+}
+
+.product-btn i {
+  font-size: 1rem;
+}
+
+/* ===== 5️⃣ QUALITY & ROASTING PHILOSOPHY ===== */
+.beans-philosophy {
+  background-color: var(--bg-secondary);
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.philosophy-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.philosophy-title {
+  font-family: "Crimson Pro", serif;
+  font-size: 3rem;
+  font-weight: 300;
+  color: #2a211c;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.philosophy-text {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #5a524c;
+}
+
+/* ===== 6️⃣ HOW TO ORDER ===== */
+.beans-howto {
+  background-color: var(--bg-primary);
+  padding: 5rem 0;
+}
+
+.howto-header.centered {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.howto-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.howto-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.step-number {
+  font-family: "Crimson Pro", serif;
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: #7f8565;
+  opacity: 0.3;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.step-title {
+  font-family: "Crimson Pro", serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #2a211c;
+  margin-bottom: 0.8rem;
+}
+
+.step-description {
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #5a524c;
+}
+
+.howto-cta {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.howto-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+}
+
+/* ===== 7️⃣ SOFT CTA ===== */
+.beans-cta {
+  background-color: var(--bg-primary);
+  padding: 4rem 0 6rem;
+}
+
+.cta-card {
+  background: linear-gradient(135deg, #7f8565 0%, #6b7352 100%);
+  border-radius: 30px;
+  padding: 4rem 3rem;
+  text-align: center;
+  color: white;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 30px 50px -20px rgba(127, 133, 101, 0.5);
+}
+
+.cta-card-title {
+  font-family: "Crimson Pro", serif;
+  font-size: 2.8rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.cta-card-text {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.9;
+}
+
+.cta-card-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-card-btn {
+  min-width: 220px;
+  padding: 1rem 2rem !important;
+}
+
+.cta-card-btn.btn-primary {
+  background-color: white;
+  color: #7f8565;
+  border-color: white;
+}
+
+.cta-card-btn.btn-primary:hover {
+  background-color: transparent;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px -10px rgba(0, 0, 0, 0.3);
+}
+
+.cta-card-btn.btn-secondary {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+.cta-card-btn.btn-secondary:hover {
+  background-color: white;
+  color: #7f8565;
+  transform: translateY(-3px);
+}
+
+/* ===== MOBILE VERSION - HERO SECTION ===== */
+
+/* Tablet kecil (768px ke bawah) */
+@media only screen and (max-width: 768px) {
+  .beans-hero {
+    min-height: 80vh;
+    padding: 7rem 0 3rem;
+    margin-top: calc(-1 * var(--nav-height));
+  }
+
+  .beans-hero-container {
+    padding: 0 1rem;
+  }
+
+  .beans-hero-content {
+    padding: 1rem;
+  }
+
+  /* Badge */
+  .hero-badge-wrapper {
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-badge {
+    font-size: 0.65rem;
+    letter-spacing: 3px;
+    padding: 0.4rem 0.8rem;
+  }
+
+  /* Title */
+  .beans-hero-title {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+
+  .text-accent::after {
+    bottom: 5px;
+    height: 6px;
+  }
+
+  /* Subheadline */
+  .hero-subheadline-wrapper {
+    max-width: 100%;
+    margin: 0 auto 1.5rem;
+  }
+
+  .beans-hero-subheadline {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    padding: 0 0.5rem;
+  }
+
+  /* Divider */
+  .hero-divider {
+    width: 60px;
+    margin: 1.5rem auto;
+  }
+
+  /* Narrative */
+  .beans-hero-narrative {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 100%;
+    padding: 0 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Decorative dots */
+  .hero-decorative {
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+  }
+
+  .decorative-dot {
+    width: 5px;
+    height: 5px;
+  }
+
+  .decorative-dot:nth-child(2) {
+    width: 7px;
+    height: 7px;
+  }
+}
+
+/* ===== 2️⃣ CATEGORY NAVIGATION - MOBILE VERSION ===== */
+@media only screen and (max-width: 768px) {
+  .beans-categories {
+    padding: 3rem 0;
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr; /* 1 kolom di mobile */
+    gap: 1.5rem;
+    max-width: 500px;
+    padding: 0.5rem;
+  }
+
+  .category-card {
+    height: 400px; /* Lebih pendek dari desktop */
+    border-radius: 16px;
+  }
+
+  .category-card:hover {
+    transform: translateY(-6px); /* Efek hover lebih kecil */
+  }
+
+  .category-card:hover .category-card-image {
+    transform: scale(1.05); /* Scale lebih kecil */
+  }
+
+  /* Background images - tetap sama */
+  .espresso-bg {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+      url("images/espresso.jpg");
+  }
+
+  .filter-bg {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+      url("images/filter.jpg");
+  }
+
+  .category-card-content {
+    padding: 2rem 1.8rem; /* Padding lebih kecil */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  }
+
+  .category-card-title {
+    font-size: 2rem; /* Dari 2.5rem turun jadi 2rem */
+    margin-bottom: 0.8rem;
+  }
+
+  .category-card-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    max-width: 280px; /* Lebih kecil */
+  }
+
+  .category-card-btn {
+    font-size: 0.85rem;
+    gap: 0.8rem;
+    padding: 0.6rem 0;
+  }
+
+  .category-card-btn i {
+    font-size: 0.75rem;
+  }
+
+  .category-card-btn:hover i {
+    transform: translateX(6px);
+  }
+}
+
+/* ===== 3️⃣ & 4️⃣ COLLECTIONS - MOBILE VERSION ===== */
+@media only screen and (max-width: 768px) {
+  .beans-collection {
+    padding: 3rem 0;
+  }
+
+  .beans-collection .container {
+    padding: 1rem; /* Padding container 0 */
+  }
+
+  .collection-header {
+    margin-bottom: 2rem;
+    max-width: 100%;
+  }
+
+  .section-subtitle {
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 0rem;
+    padding: 0.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+
+  .collection-grid {
+    grid-template-columns: 1fr; /* 1 kolom di mobile */
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    padding: 0.5rem; /* Padding grid 0 */
+  }
+
+  .product-card {
+    border-radius: 0; /* No border radius */
+    width: 100%;
+    margin: 0; /* No margin */
+    border-left: none;
+    border-right: none;
+    box-shadow: none; /* No shadow */
+    border-bottom: 1px solid rgba(127, 133, 101, 0.15); /* Border tipis sebagai pemisah */
+  }
+
+  .product-card:first-child {
+    border-top: 1px solid rgba(127, 133, 101, 0.15);
+  }
+
+  .product-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .product-image {
+    height: 200px;
+    border-radius: 0; /* No border radius */
+  }
+
+  .product-content {
+    padding: 1.5rem 1.2rem; /* Padding content */
+  }
+
+  .product-name {
+    font-size: 1.3rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .product-flavor {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+
+  .product-details {
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+    padding: 0.8rem 0;
+  }
+
+  .product-detail-item {
+    font-size: 0.85rem;
+  }
+
+  .product-weight {
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .weight-option {
+    padding: 0.25rem 0.8rem;
+    font-size: 0.75rem;
+  }
+
+  .product-btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.85rem;
+    border-radius: 6px;
+    width: 100%;
+  }
+}
+
+/* ===== 5️⃣ QUALITY & ROASTING PHILOSOPHY - MOBILE VERSION ===== */
+@media only screen and (max-width: 768px) {
+  .beans-philosophy {
+    padding: 4rem 0; /* Kurangi dari 6rem */
+  }
+
+  .beans-philosophy .container {
+    padding: 0; /* Padding container 0 */
+  }
+
+  .philosophy-content {
+    max-width: 100%; /* Full width */
+    margin: 0 auto;
+    padding: 0 1.5rem; /* Padding untuk teks */
+  }
+
+  .philosophy-title {
+    font-size: 2.2rem; /* Turun dari 3rem */
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .philosophy-text {
+    font-size: 1.1rem; /* Turun dari 1.2rem */
+    line-height: 1.7;
+    max-width: 100%;
+  }
+}
+
+/* ===== EXTRA SMALL (480px ke bawah) ===== */
+@media only screen and (max-width: 480px) {
+  .beans-philosophy {
+    padding: 3rem 0;
+  }
+
+  .philosophy-content {
+    padding: 0 1.2rem;
+  }
+
+  .philosophy-title {
+    font-size: 1.9rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .philosophy-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+/* ===== SMALL PHONES (375px ke bawah) ===== */
+@media only screen and (max-width: 375px) {
+  .beans-philosophy {
+    padding: 2.5rem 0;
+  }
+
+  .philosophy-content {
+    padding: 0 1rem;
+  }
+
+  .philosophy-title {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+  }
+
+  .philosophy-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+/* ===== 6️⃣ HOW TO ORDER - MOBILE VERSION ===== */
+@media only screen and (max-width: 768px) {
+  .beans-howto {
+    padding: 4rem 0; /* Kurangi dari 5rem */
+  }
+
+  .beans-howto .container {
+    padding: 0; /* Padding container 0 */
+  }
+
+  .howto-header.centered {
+    margin-bottom: 3rem;
+    padding: 0 1.5rem; /* Padding untuk teks header */
+  }
+
+  .section-subtitle {
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .howto-grid {
+    grid-template-columns: 1fr; /* 1 kolom di mobile */
+    gap: 2rem;
+    max-width: 100%;
+    padding: 0 1.5rem; /* Padding untuk grid */
+    margin: 0;
+  }
+
+  .howto-step {
+    flex-direction: row; /* Horizontal di mobile */
+    align-items: flex-start;
+    text-align: left;
+    gap: 1.2rem;
+    background: #ffffff;
+    padding: 1.2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(127, 133, 101, 0.1);
+  }
+
+  .step-number {
+    font-size: 2.5rem; /* Lebih kecil */
+    margin-bottom: 0;
+    opacity: 0.2;
+    min-width: 50px;
+    text-align: center;
+  }
+
+  .step-content {
+    flex: 1;
+  }
+
+  .step-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .step-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .howto-cta {
+    margin-top: 3rem;
+    padding: 0 1rem; /* Kurangi padding kiri-kanan */
+  }
+
+  .howto-btn {
+    width: 100%;
+    padding: 1rem 0.5rem; /* Padding kiri-kanan lebih kecil */
+    font-size: 0.95rem;
+    justify-content: center;
+    max-width: 50%; /* Pastikan max-width 100% */
+    box-sizing: border-box; /* Pastikan padding termasuk dalam width */
+  }
+}
+
+/* ===== 7️⃣ SOFT CTA - MOBILE VERSION ===== */
+@media only screen and (max-width: 768px) {
+    .beans-cta {
+        padding: 3rem 0 4rem; /* Kurangi padding */
+    }
+
+    .beans-cta .container {
+        padding: 0; /* Padding container 0 */
+    }
+
+    .cta-card {
+        border-radius: 0; /* Kotak penuh */
+        padding: 3rem 1.5rem;
+        max-width: 100%;
+        margin: 0;
+        box-shadow: none; /* Hilangkan shadow */
+    }
+
+    .cta-card-title {
+        font-size: 2.2rem; /* Turun dari 2.8rem */
+        margin-bottom: 1.2rem;
+    }
+
+    .cta-card-text {
+        font-size: 1rem; /* Turun dari 1.1rem */
+        line-height: 1.6;
+        margin-bottom: 2rem;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .cta-card-buttons {
+        flex-direction: column; /* Stack vertikal */
+        gap: 1rem;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cta-card-btn {
+        min-width: 100%; /* Full width */
+        width: 100%;
+        max-width: 100%;
+        padding: 0.9rem 1rem !important;
+        font-size: 0.95rem;
+        margin: 0;
+    }
+
+    .cta-card-btn.btn-primary,
+    .cta-card-btn.btn-secondary {
+        width: 100%;
+    }
+}
+
+/* ===== EXTRA SMALL (480px ke bawah) ===== */
+@media only screen and (max-width: 480px) {
+    .beans-cta {
+        padding: 2.5rem 0 3rem;
+    }
+
+    .cta-card {
+        padding: 2.5rem 1.2rem;
+    }
+
+    .cta-card-title {
+        font-size: 1.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .cta-card-text {
+        font-size: 0.95rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .cta-card-btn {
+        padding: 0.8rem 0.8rem !important;
+        font-size: 0.9rem;
+    }
+}
+
+/* ===== SMALL PHONES (375px ke bawah) ===== */
+@media only screen and (max-width: 375px) {
+    .beans-cta {
+        padding: 2rem 0 2.5rem;
+    }
+
+    .cta-card {
+        padding: 2rem 1rem;
+    }
+
+    .cta-card-title {
+        font-size: 1.7rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .cta-card-text {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
+
+    .cta-card-btn {
+        padding: 0.7rem 0.5rem !important;
+        font-size: 0.85rem;
+    }
+}

@@ -1,0 +1,1534 @@
+/* Merchandise Page Styles */
+
+:root {
+    --merch-accent: #7f8565;
+    --merch-text-light: #4b4b4b;
+    --bg-primary: #faf8f5;
+    --bg-secondary: #f5f2ed;
+}
+
+/* ===== 1️⃣ HERO SECTION ===== */
+.merch-hero {
+    height: 105vh;
+    min-height: 650px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: calc(-1 * var(--nav-height));
+    overflow: hidden;
+}
+
+.merch-hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/4.jpg");
+    background-size: cover;
+    background-position: center 40%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    animation: kenBurns 20s ease infinite alternate;
+}
+
+@keyframes kenBurns {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+.merch-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 0.3) 100%
+    );
+    z-index: 2;
+}
+
+.merch-hero-container {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.merch-hero-content {
+    color: #ffffff;
+    max-width: 700px;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.hero-badge {
+    display: inline-block;
+    font-family: "Inter", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.merch-hero-title {
+    font-family: "Crimson Pro", serif;
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+.text-accent {
+    color: #7f8565;
+    font-weight: 600;
+}
+
+.merch-hero-subheadline {
+    font-family: "Crimson Pro", serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.merch-hero-narrative {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 600px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Divider */
+.merch-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    z-index: 15;
+    pointer-events: none;
+}
+
+.merch-divider svg {
+    display: block;
+    width: 100%;
+    height: 60px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== 2️⃣ COLLECTION OVERVIEW SECTION ===== */
+.merch-collections {
+    background-color: var(--bg-primary);
+    padding: 5rem 0;
+}
+
+.section-header.centered {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-subtitle {
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #7f8565;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+.section-title {
+    font-family: "Crimson Pro", serif;
+    font-size: 2.8rem;
+    font-weight: 300;
+    color: #2a211c;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.collections-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.collection-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    height: 400px;
+}
+
+.collection-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 40px -15px rgba(127, 133, 101, 0.3);
+}
+
+.collection-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+    z-index: 1;
+}
+
+.collection-card:hover .collection-image {
+    transform: scale(1.08);
+}
+
+.apparel-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url('images/1.jpg');
+}
+
+.tools-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url('images/2.jpg');
+}
+
+.accessories-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url('images/5.jpg');
+}
+
+.collection-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2.5rem;
+    color: white;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+
+.collection-title {
+    font-family: "Crimson Pro", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0.8rem;
+}
+
+.collection-description {
+    font-family: "Inter", sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    max-width: 250px;
+    opacity: 0.9;
+}
+
+.collection-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    align-self: flex-start;
+}
+
+.collection-link i {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.collection-link:hover {
+    border-bottom-color: #7f8565;
+}
+
+.collection-link:hover i {
+    transform: translateX(6px);
+}
+
+/* ===== 3️⃣ FEATURED PRODUCTS SECTION ===== */
+.merch-products {
+    background-color: var(--bg-secondary);
+    padding: 5rem 0;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px -8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(127, 133, 101, 0.1);
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px -12px rgba(127, 133, 101, 0.2);
+}
+
+.product-image {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.05);
+}
+
+.tote-bag { background-image: url('images/4.jpg'); }
+.tumbler { background-image: url('images/6.jpg'); }
+.cap { background-image: url('images/7.jpg'); }
+.apron { background-image: url('images/8.jpg'); }
+.scoop { background-image: url('images/2.jpg'); }
+.stickers { background-image: url('images/3.jpg'); }
+
+.product-content {
+    padding: 1.8rem;
+}
+
+.product-name {
+    font-family: "Crimson Pro", serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #2a211c;
+    margin-bottom: 0.8rem;
+}
+
+.product-description {
+    font-family: "Inter", sans-serif;
+    font-size: 0.95rem;
+    color: #5a524c;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.product-detail {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 0;
+    border-top: 1px solid rgba(127, 133, 101, 0.1);
+    border-bottom: 1px solid rgba(127, 133, 101, 0.1);
+}
+
+.detail-label {
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #7f8565;
+}
+
+.detail-value {
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    color: #2a211c;
+}
+
+.product-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    background-color: #7f8565;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid #7f8565;
+}
+
+.product-btn:hover {
+    background-color: #6b7352;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px -8px rgba(127, 133, 101, 0.5);
+}
+
+.product-btn i {
+    font-size: 1rem;
+}
+
+/* ===== 4️⃣ DESIGN PHILOSOPHY SECTION ===== */
+.merch-philosophy {
+    background-color: var(--bg-primary);
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.philosophy-content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.philosophy-title {
+    font-family: "Crimson Pro", serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color: #2a211c;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.philosophy-text {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #5a524c;
+}
+
+/* ===== 5️⃣ HOW TO ORDER SECTION ===== */
+.merch-howto {
+    background-color: var(--bg-secondary);
+    padding: 5rem 0;
+}
+
+.howto-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto 4rem;
+    padding: 0 1.5rem;
+}
+
+.howto-step {
+    text-align: center;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px -8px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(127, 133, 101, 0.1);
+    transition: all 0.3s ease;
+}
+
+.howto-step:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px -12px rgba(127, 133, 101, 0.15);
+}
+
+.step-number {
+    font-family: "Crimson Pro", serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color: #7f8565;
+    opacity: 0.3;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.step-title {
+    font-family: "Crimson Pro", serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #2a211c;
+    margin-bottom: 0.8rem;
+}
+
+.step-description {
+    font-family: "Inter", sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #5a524c;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.howto-cta {
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+.howto-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+}
+
+/* ===== 6️⃣ SOFT CTA SECTION ===== */
+.merch-cta {
+    background-color: var(--bg-primary);
+    padding: 4rem 0 6rem;
+}
+
+.cta-card {
+    background: linear-gradient(135deg, #7f8565 0%, #6b7352 100%);
+    border-radius: 30px;
+    padding: 4rem 3rem;
+    text-align: center;
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 30px 50px -20px rgba(127, 133, 101, 0.5);
+}
+
+.cta-title {
+    font-family: "Crimson Pro", serif;
+    font-size: 2.8rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.cta-text {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    min-width: 220px;
+    padding: 1rem 2rem !important;
+}
+
+.cta-btn.btn-primary {
+    background-color: white;
+    color: #7f8565;
+    border-color: white;
+}
+
+.cta-btn.btn-primary:hover {
+    background-color: transparent;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px -10px rgba(0, 0, 0, 0.3);
+}
+
+.cta-btn.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+.cta-btn.btn-secondary:hover {
+    background-color: white;
+    color: #7f8565;
+    transform: translateY(-3px);
+}
+/* ===== 1️⃣ HERO SECTION - MOBILE VERSION ===== */
+@media only screen and (max-width: 768px) {
+    .merch-hero {
+        height: 100vh;
+        min-height: 600px;
+    }
+
+    .merch-hero .container {
+        padding: 0; /* Padding container 0 */
+    }
+
+    .merch-hero-content {
+        max-width: 100%;
+        padding: 0 1.5rem; /* Padding untuk teks */
+        text-align: left;
+    }
+
+    .hero-badge {
+        font-size: 0.65rem;
+        letter-spacing: 2px;
+        padding: 0.4rem 0.8rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .merch-hero-title {
+        font-size: 2.5rem; /* Turun dari 3.5rem */
+        line-height: 1.1;
+        margin-bottom: 0.8rem;
+    }
+
+    .merch-hero-subheadline {
+        font-size: 1.2rem; /* Turun dari 1.5rem */
+        margin-bottom: 1.2rem;
+    }
+
+    .merch-hero-narrative {
+        font-size: 1rem; /* Turun dari 1.1rem */
+        line-height: 1.5;
+        max-width: 100%;
+    }
+
+    /* Divider */
+    .merch-divider svg {
+        height: 40px; /* Kurangi tinggi divider */
+    }
+}
+
+/* ===== EXTRA SMALL (480px ke bawah) ===== */
+@media only screen and (max-width: 480px) {
+    .merch-hero {
+        min-height: 550px;
+    }
+
+    .merch-hero-content {
+        padding: 0 1.2rem;
+    }
+
+    .hero-badge {
+        font-size: 0.6rem;
+        padding: 0.35rem 0.7rem;
+        margin-bottom: 1rem;
+    }
+
+    .merch-hero-title {
+        font-size: 2rem;
+    }
+
+    .merch-hero-subheadline {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .merch-hero-narrative {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .merch-divider svg {
+        height: 30px;
+    }
+}
+
+/* ===== SMALL PHONES (375px ke bawah) ===== */
+@media only screen and (max-width: 375px) {
+    .merch-hero {
+        min-height: 500px;
+    }
+
+    .merch-hero-content {
+        padding: 0 1rem;
+    }
+
+    .hero-badge {
+        font-size: 0.55rem;
+        padding: 0.3rem 0.6rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .merch-hero-title {
+        font-size: 1.8rem;
+    }
+
+    .merch-hero-subheadline {
+        font-size: 1rem;
+    }
+
+    .merch-hero-narrative {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .merch-divider svg {
+        height: 25px;
+    }
+}
+
+/* ===== 2️⃣ COLLECTION OVERVIEW SECTION - MOBILE VERSION ===== */
+@media only screen and (max-width: 768px) {
+    .merch-collections {
+        padding: 3rem 0;
+    }
+
+    .merch-collections .container {
+        padding: 0;
+    }
+
+    .section-header.centered {
+        margin-bottom: 2.5rem;
+        padding: 0 1.5rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.8rem;
+        letter-spacing: 1.5px;
+        margin-bottom: 0.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    .collections-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        max-width: 90%; /* 90% dari layar */
+        margin: 0 auto; /* Tengah */
+        padding: 0;
+    }
+
+    .collection-card {
+        height: 280px;
+        border-radius: 16px;
+        width: 100%;
+    }
+
+    .collection-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .collection-card:hover .collection-image {
+        transform: scale(1.05);
+    }
+
+    .collection-content {
+        padding: 1.8rem 1.5rem;
+    }
+
+    .collection-title {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .collection-description {
+        font-size: 0.95rem;
+        line-height: 1.4;
+        margin-bottom: 1.2rem;
+        max-width: 100%;
+    }
+
+    .collection-link {
+        font-size: 0.9rem;
+        gap: 0.6rem;
+        padding: 0.4rem 0;
+    }
+
+    .collection-link i {
+        font-size: 0.8rem;
+    }
+
+    .collection-link:hover i {
+        transform: translateX(5px);
+    }
+}
+
+/* ===== EXTRA SMALL (480px ke bawah) ===== */
+@media only screen and (max-width: 480px) {
+    .merch-collections {
+        padding: 2.5rem 0;
+    }
+
+    .section-header.centered {
+        padding: 0 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .collections-grid {
+        max-width: 92%; /* Sedikit lebih lebar */
+    }
+
+    .collection-card {
+        height: 260px;
+    }
+
+    .collection-content {
+        padding: 1.5rem 1.2rem;
+    }
+
+    .collection-title {
+        font-size: 1.6rem;
+    }
+
+    .collection-description {
+        font-size: 0.9rem;
+    }
+}
+
+/* ===== SMALL PHONES (375px ke bawah) ===== */
+@media only screen and (max-width: 375px) {
+    .merch-collections {
+        padding: 2rem 0;
+    }
+
+    .section-header.centered {
+        padding: 0 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .collections-grid {
+        max-width: 94%; /* Lebih lebar dikit */
+    }
+
+    .collection-card {
+        height: 240px;
+    }
+
+    .collection-content {
+        padding: 1.2rem 1rem;
+    }
+
+    .collection-title {
+        font-size: 1.4rem;
+    }
+
+    .collection-description {
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* ===== 3️⃣ FEATURED PRODUCTS SECTION - MOBILE VERSION ===== */
+@media only screen and (max-width: 768px) {
+    .merch-products {
+        padding: 3rem 0; /* Kurangi dari 5rem */
+        background-color: var(--bg-secondary);
+    }
+
+    .merch-products .container {
+        padding: 0; /* Padding container 0 */
+    }
+
+    .section-header.centered {
+        margin-bottom: 2.5rem;
+        padding: 0 1.5rem; /* Padding untuk teks header */
+    }
+
+    .section-subtitle {
+        font-size: 0.8rem;
+        letter-spacing: 1.5px;
+        margin-bottom: 0.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem; /* Turun dari 2.8rem */
+        margin-bottom: 0;
+    }
+
+    .products-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* 1 kolom di mobile */
+        gap: 1.2rem;
+        max-width: 90%; /* 90% dari layar */
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .product-card {
+        background-color: #ffffff;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px -8px rgba(0, 0, 0, 0.08);
+        border: 1px solid rgba(127, 133, 101, 0.1);
+        transition: all 0.3s ease;
+        width: 100%;
+    }
+
+    .product-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 15px 30px -12px rgba(127, 133, 101, 0.2);
+    }
+
+    .product-image {
+        height: 200px; /* Lebih pendek dari desktop (220px) */
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.5s ease;
+    }
+
+    .product-card:hover .product-image {
+        transform: scale(1.03); /* Scale lebih kecil */
+    }
+
+    .product-content {
+        padding: 1.5rem 1.2rem; /* Kurangi padding */
+    }
+
+    .product-name {
+        font-size: 1.2rem; /* Turun dari 1.3rem */
+        margin-bottom: 0.6rem;
+    }
+
+    .product-description {
+        font-size: 0.9rem; /* Turun dari 0.95rem */
+        line-height: 1.5;
+        margin-bottom: 0.8rem;
+    }
+
+    .product-detail {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1.2rem;
+        padding: 0.5rem 0;
+        border-top: 1px solid rgba(127, 133, 101, 0.1);
+        border-bottom: 1px solid rgba(127, 133, 101, 0.1);
+    }
+
+    .detail-label {
+        font-size: 0.85rem; /* Turun dari 0.9rem */
+    }
+
+    .detail-value {
+        font-size: 0.85rem; /* Turun dari 0.9rem */
+    }
+
+    .product-btn {
+        padding: 0.7rem 1.2rem; /* Kurangi padding */
+        font-size: 0.85rem; /* Turun dari 0.9rem */
+        gap: 0.6rem;
+        border-radius: 6px;
+        width: 100%;
+    }
+
+    .product-btn i {
+        font-size: 0.95rem; /* Turun dari 1rem */
+    }
+}
+
+/* ===== EXTRA SMALL (480px ke bawah) ===== */
+@media only screen and (max-width: 480px) {
+    .merch-products {
+        padding: 2.5rem 0;
+    }
+
+    .section-header.centered {
+        padding: 0 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .products-grid {
+        max-width: 92%; /* Sedikit lebih lebar */
+        gap: 1rem;
+    }
+
+    .product-image {
+        height: 180px;
+    }
+
+    .product-content {
+        padding: 1.2rem 1rem;
+    }
+
+    .product-name {
+        font-size: 1.1rem;
+    }
+
+    .product-description {
+        font-size: 0.85rem;
+    }
+
+    .detail-label,
+    .detail-value {
+        font-size: 0.8rem;
+    }
+
+    .product-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* ===== SMALL PHONES (375px ke bawah) ===== */
+@media only screen and (max-width: 375px) {
+    .merch-products {
+        padding: 2rem 0;
+    }
+
+    .section-header.centered {
+        padding: 0 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .products-grid {
+        max-width: 94%; /* Lebih lebar dikit */
+        gap: 0.8rem;
+    }
+
+    .product-image {
+        height: 160px;
+    }
+
+    .product-content {
+        padding: 1rem 0.8rem;
+    }
+
+    .product-name {
+        font-size: 1rem;
+    }
+
+    .product-description {
+        font-size: 0.8rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .product-detail {
+        margin-bottom: 1rem;
+        padding: 0.4rem 0;
+    }
+
+    .detail-label,
+    .detail-value {
+        font-size: 0.75rem;
+    }
+
+    .product-btn {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.75rem;
+        gap: 0.5rem;
+    }
+
+    .product-btn i {
+        font-size: 0.85rem;
+    }
+}
+
+/* ===== 4️⃣ DESIGN PHILOSOPHY SECTION - MOBILE VERSION ===== */
+@media only screen and (max-width: 768px) {
+    .merch-philosophy {
+        padding: 4rem 0; /* Kurangi dari 6rem */
+        background-color: var(--bg-primary);
+    }
+
+    .merch-philosophy .container {
+        padding: 0; /* Padding container 0 */
+    }
+
+    .philosophy-content {
+        max-width: 100%;
+        padding: 0 2rem; /* Padding 2rem di kiri-kanan (lebih besar) */
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .section-subtitle {
+        font-size: 0.8rem;
+        letter-spacing: 1.5px;
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+
+    .philosophy-title {
+        font-family: "Crimson Pro", serif;
+        font-size: 2.2rem; /* Turun dari 3rem */
+        font-weight: 300;
+        color: #2a211c;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .philosophy-title .text-accent {
+        color: #7f8565;
+        font-weight: 500;
+    }
+
+    .philosophy-text {
+        font-family: "Inter", sans-serif;
+        font-size: 1.1rem; /* Turun dari 1.2rem */
+        line-height: 1.7;
+        color: #5a524c;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* ===== EXTRA SMALL (480px ke bawah) ===== */
+@media only screen and (max-width: 480px) {
+    .merch-philosophy {
+        padding: 3rem 0;
+    }
+
+    .philosophy-content {
+        padding: 0 1.8rem; /* Padding 1.8rem di kiri-kanan */
+    }
+
+    .philosophy-title {
+        font-size: 1.9rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .philosophy-text {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+/* ===== SMALL PHONES (375px ke bawah) ===== */
+@media only screen and (max-width: 375px) {
+    .merch-philosophy {
+        padding: 2.5rem 0;
+    }
+
+    .philosophy-content {
+        padding: 0 1.5rem; /* Padding 1.5rem di kiri-kanan */
+    }
+
+    .philosophy-title {
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+
+    .philosophy-text {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+}
+
+/* ===== 5️⃣ HOW TO ORDER SECTION - MOBILE VERSION ===== */
+@media only screen and (max-width: 768px) {
+    .merch-howto {
+        padding: 3rem 0; /* Kurangi dari 5rem */
+        background-color: var(--bg-secondary);
+    }
+
+    .merch-howto .container {
+        padding: 0; /* Padding container 0 */
+    }
+
+    .section-header.centered {
+        margin-bottom: 2.5rem;
+        padding: 0 2rem; /* Padding 2rem di kiri-kanan */
+    }
+
+    .section-subtitle {
+        font-size: 0.8rem;
+        letter-spacing: 1.5px;
+        margin-bottom: 0.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem; /* Turun dari 2.8rem */
+        margin-bottom: 0;
+    }
+
+    .howto-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* 1 kolom di mobile */
+        gap: 1.2rem;
+        max-width: 90%; /* 90% dari layar */
+        margin: 0 auto 3rem;
+        padding: 0;
+    }
+
+    .howto-step {
+        text-align: center;
+        padding: 2rem 1.5rem;
+        background: #ffffff;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px -8px rgba(0, 0, 0, 0.08);
+        border: 1px solid rgba(127, 133, 101, 0.1);
+        transition: all 0.3s ease;
+        width: 100%;
+    }
+
+    .howto-step:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 15px 30px -12px rgba(127, 133, 101, 0.15);
+    }
+
+    .step-number {
+        font-family: "Crimson Pro", serif;
+        font-size: 2.5rem; /* Turun dari 3rem */
+        font-weight: 300;
+        color: #7f8565;
+        opacity: 0.3;
+        margin-bottom: 0.8rem;
+        line-height: 1;
+    }
+
+    .step-title {
+        font-family: "Crimson Pro", serif;
+        font-size: 1.2rem; /* Turun dari 1.3rem */
+        font-weight: 500;
+        color: #2a211c;
+        margin-bottom: 0.8rem;
+    }
+
+    .step-description {
+        font-family: "Inter", sans-serif;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: #5a524c;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .howto-cta {
+        text-align: center;
+        padding: 0 2rem; /* Padding 2rem di kiri-kanan */
+    }
+
+    .howto-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
+        padding: 1rem 2rem;
+        font-size: 0.95rem;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+/* ===== EXTRA SMALL (480px ke bawah) ===== */
+@media only screen and (max-width: 480px) {
+    .merch-howto {
+        padding: 2.5rem 0;
+    }
+
+    .section-header.centered {
+        padding: 0 1.8rem; /* Padding 1.8rem */
+        margin-bottom: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .howto-grid {
+        max-width: 92%; /* Sedikit lebih lebar */
+        gap: 1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .howto-step {
+        padding: 1.8rem 1.2rem;
+    }
+
+    .step-number {
+        font-size: 2.2rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .step-title {
+        font-size: 1.1rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .step-description {
+        font-size: 0.9rem;
+    }
+
+    .howto-cta {
+        padding: 0 1.8rem;
+    }
+
+    .howto-btn {
+        padding: 0.9rem 1.5rem;
+        font-size: 0.9rem;
+        max-width: 350px;
+    }
+}
+
+/* ===== SMALL PHONES (375px ke bawah) ===== */
+@media only screen and (max-width: 375px) {
+    .merch-howto {
+        padding: 2rem 0;
+    }
+
+    .section-header.centered {
+        padding: 0 1.5rem; /* Padding 1.5rem */
+        margin-bottom: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .howto-grid {
+        max-width: 94%; /* Lebih lebar dikit */
+        gap: 0.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .howto-step {
+        padding: 1.5rem 1rem;
+    }
+
+    .step-number {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .step-title {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .step-description {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    .howto-cta {
+        padding: 0 1.5rem;
+    }
+
+    .howto-btn {
+        padding: 0.8rem 1.2rem;
+        font-size: 0.85rem;
+        max-width: 300px;
+    }
+
+    .howto-btn i {
+        font-size: 0.9rem;
+    }
+}
+
+/* ===== 6️⃣ SOFT CTA SECTION - MOBILE VERSION ===== */
+@media only screen and (max-width: 768px) {
+    .merch-cta {
+        padding: 3rem 0 4rem; /* Kurangi padding */
+        background-color: var(--bg-primary);
+    }
+
+    .merch-cta .container {
+        padding: 0; /* Padding container 0 */
+    }
+
+    .cta-card {
+        background: linear-gradient(135deg, #7f8565 0%, #6b7352 100%);
+        border-radius: 0; /* Full width, kotak penuh */
+        padding: 3rem 2rem; /* Padding 2rem di kiri-kanan */
+        max-width: 100%;
+        margin: 0;
+        box-shadow: none;
+        text-align: center;
+        color: white;
+    }
+
+    .cta-title {
+        font-family: "Crimson Pro", serif;
+        font-size: 2rem; /* Turun dari 2.8rem */
+        font-weight: 300;
+        margin-bottom: 1.2rem;
+        line-height: 1.2;
+        color: white;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cta-title .text-accent {
+        color: #ffffff;
+        font-weight: 500;
+        opacity: 0.9;
+    }
+
+    .cta-text {
+        font-family: "Inter", sans-serif;
+        font-size: 1.1rem; /* Turun dari 1.2rem */
+        line-height: 1.6;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cta-buttons {
+        display: flex;
+        flex-direction: column; /* Stack vertikal */
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .cta-btn {
+        min-width: 240px;
+        max-width: 280px;
+        width: 100%;
+        padding: 0.9rem 1.5rem !important;
+        font-size: 0.95rem;
+        margin: 0 auto;
+        justify-content: center;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.8rem;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        white-space: nowrap;
+    }
+
+    .cta-btn.btn-primary {
+        background-color: white;
+        color: #7f8565;
+        border: 2px solid white;
+    }
+
+    .cta-btn.btn-primary:hover {
+        background-color: transparent;
+        color: white;
+        transform: translateY(-3px);
+        box-shadow: 0 12px 25px -10px rgba(0, 0, 0, 0.3);
+    }
+
+    .cta-btn.btn-secondary {
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+    }
+
+    .cta-btn.btn-secondary:hover {
+        background-color: white;
+        color: #7f8565;
+        transform: translateY(-3px);
+    }
+
+    .cta-btn i {
+        font-size: 1rem;
+    }
+}
+
+/* ===== EXTRA SMALL (480px ke bawah) ===== */
+@media only screen and (max-width: 480px) {
+    .merch-cta {
+        padding: 2.5rem 0 3rem;
+    }
+
+    .cta-card {
+        padding: 2.5rem 1.8rem; /* Padding 1.8rem */
+    }
+
+    .cta-title {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .cta-text {
+        font-size: 1rem;
+        margin-bottom: 1.8rem;
+        max-width: 350px;
+    }
+
+    .cta-buttons {
+        max-width: 350px;
+        gap: 0.8rem;
+    }
+
+    .cta-btn {
+        min-width: 220px;
+        max-width: 260px;
+        padding: 0.8rem 1.2rem !important;
+        font-size: 0.9rem;
+    }
+
+    .cta-btn i {
+        font-size: 0.95rem;
+    }
+}
+
+/* ===== SMALL PHONES (375px ke bawah) ===== */
+@media only screen and (max-width: 375px) {
+    .merch-cta {
+        padding: 2rem 0 2.5rem;
+    }
+
+    .cta-card {
+        padding: 2rem 1.5rem; /* Padding 1.5rem */
+    }
+
+    .cta-title {
+        font-size: 1.6rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .cta-text {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+        max-width: 300px;
+    }
+
+    .cta-buttons {
+        max-width: 300px;
+        gap: 0.7rem;
+    }
+
+    .cta-btn {
+        min-width: 200px;
+        max-width: 240px;
+        padding: 0.7rem 1rem !important;
+        font-size: 0.85rem;
+        white-space: normal; /* Izinkan teks turun di HP sangat kecil */
+    }
+
+    .cta-btn i {
+        font-size: 0.9rem;
+    }
+}
+
